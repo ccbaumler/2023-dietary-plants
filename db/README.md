@@ -1,5 +1,6 @@
 The directory contains compressed databases.
-
+- Content.csv.zip is the file containing all the data from FooDB.ca
+- common_name.csv is file which links scientific name to common name. (Extracted from FooDB.ca)
 - db.trnL-entrez-ref.fasta.bz2 is a database containing all available trnL genes on NCBI.
 - [db.plant-entrez-ref.fasta.bz2](https://farm.cse.ucdavis.edu/~baumlerc/raw-db/db.plant-entrez-ref.fasta.bz2) is a database containing all available trnL-containing plant genomes on NCBI.
 - db.trnL.names.csv.gz is the taxonomic metadata database for all the trnL genes (and their plant genomes) on the NCBI.
