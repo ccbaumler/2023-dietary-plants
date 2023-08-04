@@ -10,8 +10,8 @@ print('check1')
 # Extract sample names from the filenames and create the SAMPLES list
 SAMPLES = []
 for filename in input_files:
-    if filename.endswith("_1.fastq"):
-        sample_name = filename.replace("_1.fastq", "")
+    if filename.endswith("_1.fastq.gz"):
+        sample_name = filename.replace("_1.fastq.gz", "")
         SAMPLES.append(sample_name)
 
 # Print the SAMPLES list so that we can pass it to the Snakemake workflow as a command-line argument
@@ -19,3 +19,5 @@ for filename in input_files:
 
 with open("sample_list.pkl", "wb") as f:
     pickle.dump(SAMPLES, f)
+
+print(f'generated. The first five are {SAMPLES[1:5]}')
