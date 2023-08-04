@@ -1,8 +1,18 @@
 # Load the required Python and pandas modules
 # module load python pandas
+import pickle
 
+# Function to load SAMPLES list from pickle file
+def load_samples():
+    with open("sample_list.pkl", "rb") as f:
+        return pickle.load(f)
+
+SAMPLES = load_samples()
 # Define the target rules
-
+# Define the workflow to run the rules for all samples
+rule all:
+    input:
+        expand("output/gather/{sample}.gather.csv", sample=SAMPLES)
 # Rule for running Sourmash sketch
 rule run_sourmash_sketch:
     input:
@@ -34,7 +44,4 @@ rule run_sourmash_gather:
 #   script:
 #       "join_csv.py"
 
-# Define the workflow to run the rules for all samples
-rule all:
-    input:
-        expand("output/gather/{sample}.gather.csv", sample=SAMPLES)
+

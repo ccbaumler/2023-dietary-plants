@@ -6,7 +6,7 @@ input_directory = "input"
 
 # List all files in the input directory
 input_files = os.listdir(input_directory)
-
+print('check1')
 # Extract sample names from the filenames and create the SAMPLES list
 SAMPLES = []
 for filename in input_files:
