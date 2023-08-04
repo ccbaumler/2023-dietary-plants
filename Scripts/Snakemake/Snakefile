@@ -11,16 +11,17 @@ rule run_sourmash_sketch:
     output:
         "sketches/{sample}.sig"
     shell:
-        "sourmash sketch dna -p scaled=1000,k=31,51,k=101,abund {input[0]} {input[1]} --name '{wildcards.sample}' -o {output}"
+        "sourmash sketch dna -p scaled=1000,k=21,k=31,k=51,abund {input[0]} {input[1]} --name '{wildcards.sample}' -o {output}"
 
-# Rule for running Sourmash prefetch
-rule run_sourmash_prefetch:
+# Rule for running Sourmash gather
+rule run_sourmash_gather:
     input:
         "sketches/{sample}.sig"
     output:
-        "{sample}_k51_prefetch.csv"
+        "{db}.{ksize}.{sample}.prefetch.csv"
+        "{db}.{ksize}.{sample}.gather.csv"
     shell:
-        "sourmash prefetch {input} db.trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}"
+        "sourmash prefetch {input} db.trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}" #save prefetch results 
 
 # Rule for performing inner join with common_names.csv
 rule perform_inner_join:
@@ -28,7 +29,7 @@ rule perform_inner_join:
         "{sample}_k51_prefetch.csv",
         "common_names.csv"
     output:
-        "{sample}_prefetch_cmon.csv"
+        "{sample}_prefetch_cmon.csv" #{db.{ksize}.{sample}.common.csv
     script:
         "join_csv.py"
 

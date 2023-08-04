@@ -1,43 +1,32 @@
 import sys
 import pandas as pd
 
-def match_strings(csv_file1, csv_file2, column_name1, column_name2):
-    # Read the CSV files into pandas DataFrames
-    df1 = pd.read_csv(csv_file1)
-    df2 = pd.read_csv(csv_file2)
-    #check if everything is in order
-    if column_name1 not in df1.columns:
-        raise ValueError(f"Column '{column_name1}' not found in {csv_file1}")
-    if column_name2 not in df2.columns:
-        raise ValueError(f"Column '{column_name2}' not found in {csv_file2}")
+#output = pd.read_csv('../test/test_data/prefetch_trial.csv')
+output_path = sys.argv[1]
+output = pd.read_csv(output_path)
+final_FooDB = pd.read_csv('../Common-name/final_FooDB.csv')
+final_trnl =pd.read_csv('../Common-name/final_trnL.csv')
+final_USDA = pd.read_csv('../Common-name/final_USDA.csv')
 
-    matched_data = pd.DataFrame(columns=[column_name1, column_name2])
+def std_name(name):
+    word_list = name.split()
+    #accession,region = word_list[0].split(':')
 
-    # Iterate through each row of df1 and find matches in df2
-    for index, row in df1.iterrows():
-        value_to_match = row[column_name1]
-        matches = df2[df2[column_name2].str.contains(value_to_match, case=False)]
-        if not matches.empty:
-            matched_data = pd.concat([matched_data, pd.DataFrame({column_name1: [value_to_match],
-                                                                  column_name2: [", ".join(matches[column_name2])]},
-                                                                 index=[len(matched_data)])],
-                                     ignore_index=True)
+    sci_name = word_list[1]+' '+word_list[2]
+    other = ' '.join(word_list[2:])
+    #return accession,region,sci_name,other
+    return sci_name
 
-    return matched_data
+#split match_name
+output['scientific_name'] = output['match_name'].apply(lambda x: pd.Series(std_name(x)))
 
-if __name__ == "__main__":
-    if len(sys.argv) != 5:
-        print("Usage: python script.py csv_file1 csv_file2 column_name1 column_name2")
-        sys.exit(1)
+#joins
+output = output.merge(final_USDA, on='scientific_name',how='left')
+output = output.merge(final_trnl, on='scientific_name',how='left')
+output = output.merge(final_FooDB, on='scientific_name',how='left')
 
-    csv_file1 = sys.argv[1]
-    csv_file2 = sys.argv[2]
-    column_name1 = sys.argv[3]
-    column_name2 = sys.argv[4]
+#print summary
 
-    try:
-        result = match_strings(csv_file1, csv_file2, column_name1, column_name2)
-        print("Matching Results:")
-        print(result)
-    except Exception as e:
-        print("Error:", e)
+num_rows_with_na_all_cols = output[['usda_common_name', 'foodb_common_name', 'trnl_common_name']].isna().all(axis=1).sum()
+print(f'Out of {output.shape[0]} matches,{output.shape[0] - num_rows_with_na_all_cols} were annotated with common names')
+print(sys.argv[1])
