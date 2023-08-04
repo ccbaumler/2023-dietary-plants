@@ -1,0 +1,235 @@
+,foodb_id,foodb_common_name,scientific_name
+0,4,Kiwi,Actinidia chinensis
+1,6,Onion,Allium cepa
+2,9,Chives,Allium schoenoprasum
+3,11,Cashew,Anacardium occidentale
+4,12,Pineapple,Ananas comosus
+5,13,Dill,Anethum graveolens
+6,14,Custard Apple,Annona reticulata
+7,15,Celery,Apium graveolens
+8,16,Groundnut,Arachis hypogaea
+9,17,Burdock,Arctium lappa
+10,18,Horseradish,Armoracia rusticana
+11,19,Tarragon,Artemisia dracunculus
+12,20,Mugwort,Artemisia vulgaris
+13,21,Asparagus,Asparagus officinalis
+14,22,Oats,Avena sativa
+15,23,Carambola,Averrhoa carambola
+16,24,Brazilnut,Bertholletia excelsa
+17,26,Beebread,Borago officinalis
+18,27,Mustard Greens,Brassica juncea
+19,32,Brussel-Sprout,Brassica oleracea
+22,37,Pigeonpea,Cajanus cajan
+23,38,Tea,Camellia sinensis
+24,39,Caper,Capparis spinosa
+25,40,Bell Pepper,Capsicum annuum
+26,41,Papaya,Carica papaya
+27,42,Safflower,Carthamus tinctorius
+28,43,Caraway,Carum carvi
+29,46,Garden Camomile,Chamaemelum nobile
+30,47,Chickpea,Cicer arietinum
+31,48,Endive,Cichorium endivia
+32,49,Chicory,Cichorium intybus
+33,50,Canela de la China (Sp.),Cinnamomum aromaticum
+34,51,Ceylon Cinnamon,Cinnamomum verum
+35,52,Watermelon,Citrullus lanatus
+36,53,Lime,Citrus aurantiifolia
+37,54,Lemon,Citrus limon
+38,56,Mandarin,Citrus reticulata
+39,57,Orange,Citrus sinensis
+40,59,Coffee,Coffea arabica
+41,61,Chinese Parsley,Coriandrum sativum
+42,62,Cobnut,Corylus avellana
+43,63,Saffron,Crocus sativus
+44,64,Cantaloupe,Cucumis melo
+45,65,Cucumber,Cucumis sativus
+46,66,Summer Squash,Cucurbita spp
+47,67,Cumin,Cuminum cyminum
+48,68,Indian Saffron,Curcuma longa
+49,69,Quince,Cydonia oblonga
+50,70,Lemongrass,Cymbopogon citratus
+51,72,Carrot,Daucus carota
+52,74,Cardamom,Elettaria cardamomum
+53,76,Loquat,Eriobotrya japonica
+54,77,Achnef (Berber; BOU),Eruca sativa
+55,79,Buckwheat,Fagopyrum esculentum
+56,81,Echte Feige (Ger.),Ficus carica
+57,82,Fennel,Foeniculum vulgare
+58,85,Soybean,Glycine max
+59,86,Girasol,Helianthus annuus
+60,87,Sallow Thorn,Hippophae rhamnoides
+61,88,Barley,Hordeum vulgare
+62,91,Swamp Cabbage,Ipomoea aquatica
+63,92,Sweet Potato,Ipomoea batatas
+64,93,Black Walnut,Juglans nigra
+65,94,English Walnut,Juglans regia
+66,95,Lettuce,Lactuca sativa
+67,97,Bay,Laurus nobilis
+68,98,Lentil,Lens culinaris
+69,99,Garden Cress,Lepidium sativum
+70,100,Lovage,Levisticum officinale
+71,101,Flax,Linum usitatissimum
+72,105,Apple,Malus domestica
+73,106,Mango,Mangifera indica
+74,108,Balm,Melissa officinalis
+75,112,Hortela da Folha Miuda,Mentha spicata
+76,113,Peppermint,Mentha x
+77,115,Bitter Melon,Momordica charantia
+78,118,Mace,Myristica fragrans
+79,119,Basil,Ocimum basilicum
+80,120,Evening-Primrose,Oenothera biennis
+81,121,Olive,Olea europaea
+82,122,Marjoram,Origanum majorana
+83,124,Common Turkish Oregano,Origanum vulgare
+84,125,Rice,Oryza sativa
+85,128,Maracuya,Passiflora edulis
+86,129,Parsnip,Pastinaca sativa
+87,130,Avocado,Persea americana
+88,131,Parsley,Petroselinum crispum
+89,132,Scarlet Runner Bean,Phaseolus coccineus
+90,133,Butter Bean,Phaseolus lunatus
+91,134,Black Bean,Phaseolus vulgaris
+92,135,Date Palm,Phoenix dactylifera
+93,137,Anise,Pimpinella anisum
+94,139,Black Pepper,Piper nigrum
+95,140,Pistachio,Pistacia vera
+96,141,Pea,Pisum sativum
+97,142,Purslane,Portulaca oleracea
+98,144,Apricot,Prunus armeniaca
+99,146,Sour Cherry,Prunus cerasus
+100,147,Plum,Prunus domestica
+101,148,Almond,Prunus dulcis
+102,149,Peach,Prunus persica
+103,150,Guava,Psidium guajava
+104,151,Granado (Sp.),Punica granatum
+105,152,Pear,Pyrus communis
+106,153,Radish,Raphanus sativus
+107,154,Rhubarb,Rheum rhabarbarum
+108,155,Black Currant,Ribes nigrum
+109,156,Red Currant,Ribes rubrum
+110,157,Gooseberry,Ribes uva-crispa
+111,158,Berro,Nasturtium officinale
+112,159,Rosemary,Rosmarinus officinalis
+113,162,Raspberry,Rubus idaeus
+114,164,Garden Sorrel,Rumex acetosa
+115,165,Sage,Salvia officinalis
+116,166,Black Elder,Sambucus nigra
+117,167,Summer Savory,Satureja hortensis
+118,169,Rye,Secale cereale
+119,170,Ajonjoli (Sp.),Sesamum indicum
+120,173,Tomato,Lycopersicon esculentum
+121,174,Aubergine,Solanum melongena
+122,175,Potato,Solanum tuberosum
+123,178,Spinach,Spinacia oleracea
+124,179,Clove,Syzygium aromaticum
+125,180,Indian Tamarind,Tamarindus indica
+126,181,Dandelion,Taraxacum officinale
+127,182,Cacao,Theobroma cacao
+128,183,Common Thyme,Thymus vulgaris
+129,184,Basswood,Tilia sp.
+130,186,Alholva (Sp.),Trigonella foenum-graecum
+131,187,Wheat,Triticum aestivum
+132,191,Blueberry,Vaccinium corymbosum
+133,192,American Cranberry,Vaccinium macrocarpon
+134,193,Bilberry,Vaccinium myrtillus
+135,197,Broadbean,Vicia faba
+136,198,Adzuki Bean,Vigna angularis
+137,199,Black Gram,Vigna mungo
+138,200,Green Gram,Vigna radiata
+139,204,European Grape,Vitis vinifera
+140,205,Corn,Zea mays
+141,206,Ginger,Zingiber officinale
+142,264,Beet,Beta vulgaris
+143,284,Pumpkin,Cucurbita maxima
+144,288,Allspice,Pimenta dioica
+145,289,Pigweed,Amaranthus sp.
+146,291,Arrowroot,Maranta arundinacea
+147,312,Breadfruit,Artocarpus altilis
+148,313,Breadnut,Brosimum alicastrum
+149,318,Butterbur,Petasites japonicus
+150,320,Butternut,Juglans cinerea
+151,322,Calabash Gourd,Lagenaria siceraria
+152,326,Carob,Ceratonia siliqua
+153,328,Cassava,Manihot esculenta
+154,330,Chayote,Sechium edule
+155,331,Cherimoya,Annona cherimola
+156,332,Chervil,Anthriscus cerefolium
+157,337,Water chestnut,Eleocharis dulcis
+158,338,Garland Chrysanthemum,Chrysanthemum coronarium
+159,341,Coconut,Cocos nucifera
+160,345,Corn Salad,Valerianella locusta
+161,346,Cotton,Gossypium sp
+162,360,Durian,Durio zibethinus
+163,368,European Chestnut,Castanea sativa
+164,372,Ginkgo,Ginkgo biloba
+165,384,Ben Nut,Moringa oleifera
+166,386,Bonavist Bean,Lablab purpureus
+167,387,Irish Moss,Chondrus crispus
+168,389,Jackfruit,Artocarpus heterophyllus
+169,391,Aceituna Dulce,Syzygium cumini
+170,392,Jerusalem Artichoke,Helianthus tuberosus
+171,394,Jew's Mallow,Corchorus olitorius
+172,399,Lambsquarter,Chenopodium album
+173,401,Elephant Garlic,Allium ampeloprasum
+174,407,Water Lotus,Nelumbo nucifera
+175,408,White Lupine,Lupinus albus
+176,409,Vinespinach,Basella alba
+177,410,Mamey,Mammea americana
+178,411,Mangosteen,Garcinia mangostana
+179,416,Mat Bean,Vigna aconitifolia
+180,417,Mountain Yam,Dioscorea pentaphylla
+181,420,White Mustard,Sinapis alba
+182,422,New Zealand Spinach,Tetragonia tetragonioides
+183,427,Okra,Abelmoschus esculentus
+184,436,Cayenne,Capsicum frutescens
+185,437,American Persimmon,Diospyros virginiana
+186,441,Pinyon Pine,Pinus edulis
+187,442,Pitanga,Eugenia uniflora
+188,444,Banana,Musa x
+189,445,Pokeweed,Phytolacca americana
+190,447,Opium Poppy,Papaver somniferum
+191,448,Breadroot,Psoralea esculenta
+192,455,Pomarrosa,Syzygium jambos
+193,457,Acedera de Guinea (Sp.),Hibiscus sabdariffa
+194,467,Salsify,Tragopogon porrifolius
+195,468,Sapodilla,Manilkara zapota
+196,488,Soursop,Annona muricata
+197,490,Spirulina,Spirulina spp.
+198,493,Strawberry Guava,Psidium cattleianum
+199,496,Sugar-Apple,Annona squamosa
+200,499,Taro,Colocasia esculenta
+201,502,Tomatillo,Physalis ixocarpa
+202,503,Luffa,Luffa aegyptiaca
+203,510,Waxgourd,Benincasa hispida
+204,518,Asparagus Pea,Psophocarpus tetragonolobus
+205,519,Wild Yam,Dioscorea sp.
+206,520,Yambean,Pachyrhizus erosus
+207,521,Malanga,Xanthosoma sagittifolium
+208,534,Black-eyed Pea,Vigna unguiculata
+209,536,Macadamia,Macadamia spp
+211,558,Brazillian Guava,Feijoa sellowiana
+212,800,Butterseed,Vitellaria paradoxa
+213,802,Ucahuba,Virola surinamensis
+214,813,Nance,Byrsonima crassifolia
+215,880,Garlic,Allium sativum
+217,29,Canola,Brassica napus
+218,35,Sarson,Brassica rapa
+220,73,Persimmon,Diospyros kaki
+221,89,Hyssop,Hyssopus officinalis
+222,90,Chinese Star Anise,Illicium verum
+223,102,Oregano,Lippia graveolens
+224,107,Annual Camomile,Matricaria recutita
+225,109,Mint,Mentha sp
+226,110,Water Mint,Mentha aquatica
+227,112,Biblical Mint,Mentha longifolia
+229,123,Oregano,Origanum onites
+230,145,Cereza,Prunus avium
+231,161,Cloudberry,Rubus chamaemorus
+232,168,Savory,Satureja montana
+233,196,Vervain,Verbena officinalis
+234,391,Aceituna Dulce,Eugenia jambolana
+235,456,Rose Hips,Rosa spp
+236,466,Salmonberry,Rubus spectabilis
+237,509,Japanese Horseradish,Wasabia japonica
+238,562,Shiitake,Lentinus edodes
+239,111,Cornmint,Mentha arvensis
