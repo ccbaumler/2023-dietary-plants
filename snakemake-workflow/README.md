@@ -1,2 +1,3 @@
 - Input contain paired end reads for all the samples
 - Output has two directories: Sketches houses all the combined sketeches for each sample, and Gather houses all gather csv outputs
+- sample_list.pkl contains list on all samples in the input directory. The snakefile uses this to define SAMPLES
