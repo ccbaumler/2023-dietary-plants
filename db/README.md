@@ -12,3 +12,8 @@ These are also available for direct download at https://farm.cse.ucdavis.edu/~ba
 To create a sourmash database from the fasta databases, use:
 
 `sourmash sketch dna -p scaled=1,k=11 --singleton <fasta.db> -o <fasta.db.k11.zip>`
+
+### Sources for databases
+- db.trnL.names.csv.gz is the taxonomic metadata database for all the trnL genes (and their plant genomes) on the NCBI.
+- FooDB_data.zip source: https://foodb.ca/downloads
+- USDA_data.csv source: https://plants.usda.gov/home/downloads
