@@ -1,3 +1,0 @@
-- db.trnL.names.csv.gz is the taxonomic metadata database for all the trnL genes (and their plant genomes) on the NCBI.
-- FooDB_data.zip source: https://foodb.ca/downloads
-- USDA_data.csv source: https://plants.usda.gov/home/downloads
