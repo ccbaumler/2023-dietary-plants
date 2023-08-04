@@ -1,46 +1,79 @@
-# Load the required Python and pandas modules
-# module load python pandas
+import os
 import pickle
 
-# Function to load SAMPLES list from pickle file
-def load_samples():
-    with open("sample_list.pkl", "rb") as f:
-        return pickle.load(f)
+#Extracting list of samples from input directory
 
-SAMPLES = load_samples()
-# Define the target rules
-# Define the workflow to run the rules for all samples
+def extract_samples():
+    input_directory = "input"
+    input_files = os.listdir(input_directory)
+    # Extract sample names from the filenames and create the SAMPLES list
+    SAMPLES = []
+    for filename in input_files:
+        if filename.endswith("_1.fastq.gz"):
+            sample_name = filename.replace("_1.fastq.gz", "")
+            SAMPLES.append(sample_name)
+
+    return SAMPLES
+# Function to load SAMPLES list from pickle file
+#def load_samples():
+#    with open("sample_list.pkl", "rb") as f:
+#        return pickle.load(f)
+
+SAMPLES = extract_samples()
+
+def name_scheme():
+    if config["db"] == './../Sketched-db/db.crop-plant-entrez.ref.sig.zip':
+        return config["group"]+"."+config["k"]+"."+"crop_genome"
+    else:
+        return config["group"]+"."+config["k"]+"."+"genome"
+
+dir_name = name_scheme()
+
+
+#Make directory for output
+shell:
+    """
+    mkdir -p output/{wildcards.dir_name}
+    mkdir -p output/{wildcards.dir_name}/sketches
+    mkdir -p output/{wildcards.dir_name}/gather
+    mkdir -p output/{wildcards.dir_name}/cmon_name_annot
+    """
+
+# SNAKEMAKE RULES
 rule all:
     input:
         expand("output/gather/{sample}.gather.csv", sample=SAMPLES)
 # Rule for running Sourmash sketch
 rule run_sourmash_sketch:
     input:
-        "input/{sample}_1.fastq.gz",
-        "input/{sample}_2.fastq.gz"
+        "input/" + dir_name +"/{sample}_1.fastq.gz",
+        "input/" + dir_name +"/{sample}_2.fastq.gz"
     output:
-        "output/sketches/{sample}.sig.zip"
+        "output/"+ dir_name +"/sketches/{sample}.sig.zip"
     shell:
         "sourmash sketch dna -p scaled=1000,k=21,k=31,k=51,abund {input[0]} {input[1]} --name '{wildcards.sample}' -o {output}"
 
 # Rule for running Sourmash gather
 rule run_sourmash_gather:
     input:
-        "output/sketches/{sample}.sig.zip"
+        "output/"+ dir_name +"/sketches/{sample}.sig.zip"
     output:
         #"output/prefetch/{sample}.prefetch.csv" #{db}.{ksize}.{sample}
-        "output/gather/{sample}.gather.csv"
+        "output/"+ dir_name+"/gather/{sample}.gather.csv"
+    params:
+        db = config["db"]
+        k =config["k"]
     shell:
         #"sourmash prefetch {input} db.trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}" #save prefetch results
-        "sourmash gather {input} ../../Sketched-db/db.plant-entrez-ref.sig.zip --threshold-bp 0 -k 51 -o {output}" 
+        "sourmash gather {input} {params.db} --threshold-bp 0 -k {params.k} -o {output}" 
 
 # Rule for performing inner join with common_names.csv
 rule perform_inner_join:
     input:
-       "output/gather/{sample}.gather.csv" ,
+       "output/"+dir_name +"/gather/{sample}.gather.csv" ,
    output:
-        "output/cmon_name_anot/{sample}.annot.gather.csv" #{db.{ksize}.{sample}.common.csv
+        "output/"+dir_name+"/cmon_name_annot/{sample}.annot.gather.csv" #{db.{ksize}.{sample}.common.csv
    script:
-       "join_common_name_dbs.py"
+       "join_common_name_dbs.py {input} {output}"
 
 
