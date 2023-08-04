@@ -32,7 +32,7 @@ rule run_sourmash_gather:
         "output/gather/{sample}.gather.csv"
     shell:
         #"sourmash prefetch {input} db.trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}" #save prefetch results
-        "sourmash gather output/sketches/{sample}.sig.zip ../../Sketched-db/db.plant-entrez-ref.sig.zip --threshold-bp 0 -k 51 -o {output}" 
+        "sourmash gather {input} ../../Sketched-db/db.plant-entrez-ref.sig.zip --threshold-bp 0 -k 51 -o {output}" 
 
 # Rule for performing inner join with common_names.csv
 #rule perform_inner_join:
