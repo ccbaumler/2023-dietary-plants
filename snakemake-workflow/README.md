@@ -1,1 +1,2 @@
-
+- Input contain paired end reads for all the samples
+- Output has two directories: Sketches houses all the combined sketeches for each sample, and Gather houses all gather csv outputs
