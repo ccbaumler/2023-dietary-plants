@@ -5,7 +5,7 @@ import pandas as pd
 output_path = sys.argv[1]
 output = pd.read_csv(output_path)
 final_FooDB = pd.read_csv('../Common-name/final_FooDB.csv')
-final_trnl =pd.read_csv('../Common-name/final_trnL.csv')
+final_trnl =pd.read_csv('../Common-name/final_trnl.csv')
 final_USDA = pd.read_csv('../Common-name/final_USDA.csv')
 
 def std_name(name):
