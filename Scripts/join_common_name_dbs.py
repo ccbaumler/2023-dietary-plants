@@ -3,6 +3,7 @@ import pandas as pd
 
 #results = pd.read_csv('../test/test_data/prefetch_trial.csv')
 input_path = sys.argv[1]
+output_path = sys.argv[2]
 results = pd.read_csv(input_path)
 final_FooDB = pd.read_csv('../db/Common-name-cleaned/final_FooDB.csv')
 final_trnl =pd.read_csv('../db/Common-name-cleaned/final_trnl.csv')
@@ -30,4 +31,5 @@ results = results.merge(final_FooDB, on='scientific_name',how='left')
 
 num_rows_with_na_all_cols = results[['usda_common_name', 'foodb_common_name', 'trnl_common_name']].isna().all(axis=1).sum()
 print(f'Out of {results.shape[0]} matches,{results.shape[0] - num_rows_with_na_all_cols} were annotated with common names')
-print(sys.argv[1])
+
+results.to_csv(output_path,index=False)
