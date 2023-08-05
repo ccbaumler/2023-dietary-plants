@@ -61,4 +61,3 @@ rule perform_inner_join:
     script:
        "join_common_name_dbs.py {input} {output}"
 
-
