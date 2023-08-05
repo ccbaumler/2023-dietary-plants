@@ -20,6 +20,7 @@ def extract_samples():
 #        return pickle.load(f)
 
 SAMPLES = extract_samples()
+print(SAMPLES)
 
 def name_scheme():
     if config["db"] == './../Sketched-db/db.crop-plant-entrez.ref.sig.zip':
