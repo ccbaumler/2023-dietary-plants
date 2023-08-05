@@ -2,6 +2,7 @@ import os
 import pickle
 
 #Extracting list of samples from input directory
+include: "create_directories.smk"
 
 def extract_samples():
     input_directory = "input"
@@ -22,23 +23,6 @@ def extract_samples():
 SAMPLES = extract_samples()
 print(SAMPLES)
 
-def name_scheme():
-    if config["db"] == './../Sketched-db/db.crop-plant-entrez.ref.sig.zip':
-        return config["group"]+"."+config["k"]+"."+"crop_genome"
-    else:
-        return config["group"]+"."+config["k"]+"."+"genome"
-
-dir_name = name_scheme()
-
-
-#Make directory for output
-shell:
-    """
-    mkdir -p output/{wildcards.dir_name}
-    mkdir -p output/{wildcards.dir_name}/sketches
-    mkdir -p output/{wildcards.dir_name}/gather
-    mkdir -p output/{wildcards.dir_name}/cmon_name_annot
-    """
 
 # SNAKEMAKE RULES
 rule all:
