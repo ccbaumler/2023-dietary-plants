@@ -72,9 +72,9 @@ rule run_sourmash_gather:
 rule perform_inner_join:
     input:
        "output/"+dir_name +"/gather/{sample}.gather.csv" ,
-   output:
+    output:
        "output/"+dir_name+"/cmon_name_annot/{sample}.annot.gather.csv" #{db.{ksize}.{sample}.common.csv
-   script:
+    script:
        "join_common_name_dbs.py {input} {output}"
 
 
