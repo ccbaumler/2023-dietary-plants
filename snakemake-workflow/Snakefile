@@ -1,8 +1,6 @@
 import os
 import pickle
 
-#Extracting list of samples from input directory
-include: "create_directories.smk"
 
 def extract_samples():
     input_directory = "input"
@@ -24,10 +22,42 @@ SAMPLES = extract_samples()
 print(SAMPLES)
 
 
+def name_scheme():
+    if config["db"] == './../Sketched-db/db.crop-plant-entrez.ref.sig.zip':
+        return config["group"]+"."+config["k"]+"."+"crop_genome"
+    else:
+        return config["group"]+"."+config["k"]+"."+"genome"
+
+dir_name = name_scheme()
+
+
+
 # SNAKEMAKE RULES
 rule all:
     input:
         expand("output/"+dir_name+"/cmon_name_annot/{sample}.annot.gather.csv", sample=SAMPLES)
+        directory("output/{dir_name}"),
+        directory("output/{dir_name}/sketches"),
+        directory("output/{dir_name}/gather"),
+        directory("output/{dir_name}/cmon_name_annot")
+
+#Making required directories
+
+rule create_directories:
+    output:
+        directory("output/{dir_name}"),
+        directory("output/{dir_name}/sketches"),
+        directory("output/{dir_name}/gather"),
+        directory("output/{dir_name}/cmon_name_annot")
+    shell:
+        """
+        mkdir -p {output[0]}
+        mkdir -p {output[1]}
+        mkdir -p {output[2]}
+        mkdir -p {output[3]}
+        """
+
+
 # Rule for running Sourmash sketch
 rule run_sourmash_sketch:
     input:
@@ -47,7 +77,7 @@ rule run_sourmash_gather:
         "output/"+ dir_name+"/gather/{sample}.gather.csv"
     params:
         db = config["db"]
-        k =config["k"]
+        k = config["k"]
     shell:
         #"sourmash prefetch {input} db.trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}" #save prefetch results
         "sourmash gather {input} {params.db} --threshold-bp 0 -k {params.k} -o {output}" 
