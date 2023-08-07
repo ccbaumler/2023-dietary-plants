@@ -31,7 +31,15 @@ def name_scheme():
 
 dir_name = name_scheme()
 
-
+# test rule
+rule test:
+    output:
+        directory("results")
+    shell:
+        """
+        echo "The directory name is: {dir_name}"
+        echo "The sample name is: {SAMPLES[0]}"
+        """.format(dir_name=dir_name, SAMPLES=SAMPLES)
 
 # SNAKEMAKE RULES
 rule all:
