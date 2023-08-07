@@ -41,7 +41,7 @@ rule test:
         echo "The sample name is: {SAMPLES[0]}"
         """.format(dir_name=dir_name, SAMPLES=SAMPLES)
 
-# SNAKEMAKE RULES
+# SNAKEMAKE RULESv
 rule all:
     input:
         expand("output/"+dir_name+"/cmon_name_annot/{sample}.annot.gather.csv", sample=SAMPLES)
