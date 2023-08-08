@@ -1,5 +1,6 @@
 1. Input folder contians the paired end metagenomic sequencing reads for each group (weigh-loss, adult and cancer/IBD)
 - Use this workflow with the `snakemake -s Snakefile -j 32 --use-conda --latency-wait 30 --rerun-incomplete` command!
+- If `run_sourmash_gather` gives error `missing file` the `gather` command returned 0 matches. Use `-k` or `--keep-going` in cli.
 
 
 2. The output directory contains a sequence group directory which contains database-specific directories. The final files per database per group are stored in the directories, gather and cmon_name_annot.
