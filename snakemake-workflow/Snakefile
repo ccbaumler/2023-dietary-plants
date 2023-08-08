@@ -1,5 +1,5 @@
 import os
-import pickle
+#import pickle
 
 configfile: "config.yaml"
 
@@ -21,16 +21,19 @@ def extract_samples():
 
 #SAMPLES = extract_samples()
 
+# Another method for ustilizing a config file in snakemake to the fullest
+def get_wildcards(wildcards):
+    return config["dbs"][wildcards.db]
+    return config["k_size"][wildcards.k]
+
+#def name_scheme():
+#    if config["db"] == './../Sketched-db/db.crop-plant-entrez.ref.sig.zip':
+#        return config["group"]+"."+config["k"]+"."+"crop_genome"
+#    else:
+#        return config["group"]+"."+config["k"]+"."+"genome"
 
 
-def name_scheme():
-    if config["db"] == './../Sketched-db/db.crop-plant-entrez.ref.sig.zip':
-        return config["group"]+"."+config["k"]+"."+"crop_genome"
-    else:
-        return config["group"]+"."+config["k"]+"."+"genome"
-
-
-dir_name =name_scheme()
+#dir_name = name_scheme()
 SAMPLES = extract_samples()
 # test rule
 #rule test:
@@ -49,39 +52,44 @@ SAMPLES = extract_samples()
 # SNAKEMAKE RULES
 rule all:
    input:
-        expand("output/{dir_name}/cmon_name_annot/{sample}.annot.gather.csv", sample=SAMPLES, dir_name=dir_name)
+        expand("output/" + config["group"] + "/{db}/cmon_name_annot/{db}.{sample}.{k}.annot.gather.csv",  db=config["dbs"] ,sample=SAMPLES, k=config["k_size"])
 
 
 # Rule for running Sourmash sketch
 rule run_sourmash_sketch:
     input:
-        "input/" + config["group"] +"/{sample}_1.fastq.gz",
-        "input/" + config["group"] +"/{sample}_2.fastq.gz"
+        r1="input/" + config["group"] + "/{sample}_1.fastq.gz",
+        r2="input/" + config["group"] + "/{sample}_2.fastq.gz"
     output:
-        "output/"+ dir_name +"/sketches/{sample}.sig.zip"
+        "output/" + config["group"] + "/sketches/{sample}.sig.zip"
+    conda:
+        "sourmash.yml"
     shell:
-        "sourmash sketch dna -p scaled=1000,k=21,k=31,k=51,abund {input[0]} {input[1]} --name '{wildcards.sample}' -o {output}"
+        "sourmash sketch dna -p scaled=1000,k=21,k=31,k=51,abund {input.r1} {input.r2} --name '{wildcards.sample}' -o {output}"
 
 # Rule for running Sourmash gather
 rule run_sourmash_gather:
     input:
-        "output/"+ dir_name +"/sketches/{sample}.sig.zip"
+        "output/" + config["group"] + "/sketches/{sample}.sig.zip"
     output:
         #"output/prefetch/{sample}.prefetch.csv" #{db}.{ksize}.{sample}
-        "output/"+ dir_name+"/gather/{sample}.gather.csv"
+        "output/" + config["group"] + "/{db}/gather/{db}.{sample}.{k}.gather.csv"
+    conda:
+        "sourmash.yml"
     params:
-        db = config["db"],
-        k = config["k"]
+        # Access the file name instead of the assigned name
+        db_file = lambda wildcards:config["dbs"][wildcards.db],
+        #k = config["k"]
     shell:
         #"sourmash prefetch {input} db.trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}" #save prefetch results
-        "sourmash gather {input} {params.db} --threshold-bp 0 -k {params.k} -o {output}" 
+        "sourmash gather {input} {params.db_file} --threshold-bp 0 -k {wildcards.k} -o {output}" 
 
 # Rule for performing inner join with common_names.csv
 rule perform_inner_join:
     input:
-       "output/"+dir_name +"/gather/{sample}.gather.csv" ,
+       "output/" + config["group"] + "/{db}/gather/{db}.{sample}.{k}.gather.csv" ,
     output:
-       "output/"+dir_name+"/cmon_name_annot/{sample}.annot.gather.csv" #{db.{ksize}.{sample}.common.csv
+       "output/" + config["group"] + "/{db}/cmon_name_annot/{db}.{sample}.{k}.annot.gather.csv" #{db.{ksize}.{sample}.common.csv
     shell:
        "python join_common_name_dbs.py {input} {output}"
 
