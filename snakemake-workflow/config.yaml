@@ -2,10 +2,11 @@
 
 group: "weight_loss"
 
-#db: ../db/Sketched-db/db.crop-plant-entrez.ref.sig.zip
-db: "../db/Sketched-db/db.plant-entrez-ref.sig.zip"
+dbs:
+    crop_chloroplast: "../db/Sketched-db/db.crop-plant-entrez.ref.sig.zip"
+    all_chloroplast: "../db/Sketched-db/db.plant-entrez-ref.sig.zip"
 
-#k: 21
-#k: 31
-k: "51"
-
+k_size:
+  - 21
+  - 31
+  - 51
