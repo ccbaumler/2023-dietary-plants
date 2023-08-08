@@ -1,0 +1,101 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 6
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count    min threads    max threads
+-------------------  -------  -------------  -------------
+all                        1              1              1
+perform_inner_join         3              1              1
+run_sourmash_gather        3              1              1
+run_sourmash_sketch        3              1              1
+total                     10              1              1
+
+Select jobs to execute...
+
+[Mon Aug  7 17:36:41 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520726_1.fastq.gz, input/weight_loss/ERR11520726_2.fastq.gz
+    output: output/weight_loss.51.genome/sketches/ERR11520726.sig.zip
+    jobid: 3
+    reason: Missing output files: output/weight_loss.51.genome/sketches/ERR11520726.sig.zip
+    wildcards: sample=ERR11520726
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=1000,k=21,k=31,k=51,abund input/weight_loss/ERR11520726_1.fastq.gz input/weight_loss/ERR11520726_2.fastq.gz --name 'ERR11520726' -o output/weight_loss.51.genome/sketches/ERR11520726.sig.zip
+
+[Mon Aug  7 17:36:41 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520694_1.fastq.gz, input/weight_loss/ERR11520694_2.fastq.gz
+    output: output/weight_loss.51.genome/sketches/ERR11520694.sig.zip
+    jobid: 9
+    reason: Missing output files: output/weight_loss.51.genome/sketches/ERR11520694.sig.zip
+    wildcards: sample=ERR11520694
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=1000,k=21,k=31,k=51,abund input/weight_loss/ERR11520694_1.fastq.gz input/weight_loss/ERR11520694_2.fastq.gz --name 'ERR11520694' -o output/weight_loss.51.genome/sketches/ERR11520694.sig.zip
+
+[Mon Aug  7 17:36:41 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520689_1.fastq.gz, input/weight_loss/ERR11520689_2.fastq.gz
+    output: output/weight_loss.51.genome/sketches/ERR11520689.sig.zip
+    jobid: 6
+    reason: Missing output files: output/weight_loss.51.genome/sketches/ERR11520689.sig.zip
+    wildcards: sample=ERR11520689
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=1000,k=21,k=31,k=51,abund input/weight_loss/ERR11520689_1.fastq.gz input/weight_loss/ERR11520689_2.fastq.gz --name 'ERR11520689' -o output/weight_loss.51.genome/sketches/ERR11520689.sig.zip
+[Mon Aug  7 17:36:47 2023]
+Finished job 3.
+1 of 10 steps (10%) done
+Select jobs to execute...
+
+[Mon Aug  7 17:36:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss.51.genome/sketches/ERR11520726.sig.zip
+    output: output/weight_loss.51.genome/gather/ERR11520726.gather.csv
+    jobid: 2
+    reason: Missing output files: output/weight_loss.51.genome/gather/ERR11520726.gather.csv; Input files updated by another job: output/weight_loss.51.genome/sketches/ERR11520726.sig.zip
+    wildcards: sample=ERR11520726
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss.51.genome/sketches/ERR11520726.sig.zip ../../Sketched-db/db.plant-entrez-ref.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss.51.genome/gather/ERR11520726.gather.csv
+[Mon Aug  7 17:36:47 2023]
+Finished job 9.
+2 of 10 steps (20%) done
+Select jobs to execute...
+
+[Mon Aug  7 17:36:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss.51.genome/sketches/ERR11520694.sig.zip
+    output: output/weight_loss.51.genome/gather/ERR11520694.gather.csv
+    jobid: 8
+    reason: Missing output files: output/weight_loss.51.genome/gather/ERR11520694.gather.csv; Input files updated by another job: output/weight_loss.51.genome/sketches/ERR11520694.sig.zip
+    wildcards: sample=ERR11520694
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss.51.genome/sketches/ERR11520694.sig.zip ../../Sketched-db/db.plant-entrez-ref.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss.51.genome/gather/ERR11520694.gather.csv
+[Mon Aug  7 17:36:48 2023]
+Error in rule run_sourmash_gather:
+    jobid: 2
+    input: output/weight_loss.51.genome/sketches/ERR11520726.sig.zip
+    output: output/weight_loss.51.genome/gather/ERR11520726.gather.csv
+    shell:
+        sourmash gather output/weight_loss.51.genome/sketches/ERR11520726.sig.zip ../../Sketched-db/db.plant-entrez-ref.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss.51.genome/gather/ERR11520726.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Aug  7 17:36:48 2023]
+Error in rule run_sourmash_gather:
+    jobid: 8
+    input: output/weight_loss.51.genome/sketches/ERR11520694.sig.zip
+    output: output/weight_loss.51.genome/gather/ERR11520694.gather.csv
+    shell:
+        sourmash gather output/weight_loss.51.genome/sketches/ERR11520694.sig.zip ../../Sketched-db/db.plant-entrez-ref.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss.51.genome/gather/ERR11520694.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Mon Aug  7 17:36:49 2023]
+Finished job 6.
+3 of 10 steps (30%) done
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-08-07T173640.837654.snakemake.log

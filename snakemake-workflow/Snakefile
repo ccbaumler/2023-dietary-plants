@@ -33,18 +33,18 @@ def name_scheme():
 dir_name =name_scheme()
 SAMPLES = extract_samples()
 # test rule
-rule test:
-    params:
-        dir_name =dir_name,
-        another = SAMPLES,
-        k = config['k'],
-        group= config["group"]
-    shell:
-        """
-        echo "{params.k},{params.group}"
-        echo "{params.dir_name} and {params.another}"
-        
-        """
+#rule test:
+#    params:
+#        dir_name =dir_name,
+#        another = SAMPLES,
+#        k = config['k'],
+#        group= config["group"]
+#    shell:
+#        """
+#        echo "{params.k},{params.group}"
+#        echo "{params.dir_name} and {params.another}"
+#        
+#        """
 
 # SNAKEMAKE RULES
 rule all:
@@ -55,8 +55,8 @@ rule all:
 # Rule for running Sourmash sketch
 rule run_sourmash_sketch:
     input:
-        "input/" + dir_name +"/{sample}_1.fastq.gz",
-        "input/" + dir_name +"/{sample}_2.fastq.gz"
+        "input/" + config["group"] +"/{sample}_1.fastq.gz",
+        "input/" + config["group"] +"/{sample}_2.fastq.gz"
     output:
         "output/"+ dir_name +"/sketches/{sample}.sig.zip"
     shell:
