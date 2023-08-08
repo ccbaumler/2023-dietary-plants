@@ -83,5 +83,5 @@ rule perform_inner_join:
     output:
        "output/"+dir_name+"/cmon_name_annot/{sample}.annot.gather.csv" #{db.{ksize}.{sample}.common.csv
     shell:
-       "python ../Scripts/join_common_name_dbs.py {input} {output}"
+       "python join_common_name_dbs.py {input} {output}"
 
