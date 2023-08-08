@@ -3,7 +3,7 @@
 
 
 2. The output directory contains a sequence group directory which contains database-specific directories. The final files per database per group are stored in the directories, gather and cmon_name_annot.
-
+```
 ~/2023-dietary-plants/snakemake-workflow
    |--input
    |----weight_loss
@@ -16,7 +16,7 @@
    |--------cmon_name_annot
    |--------gather
    |------sketches
-
+```
 
 - File naming scheme : {database_shorthand}.{sample}.{k-size}.{output_type}. 
     - `sourmash gather` output = output/weight_loss/crop_chloroplast/gather/crop_chloroplast.ERR11520726.51.gather.csv
