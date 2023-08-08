@@ -1,0 +1,4 @@
+NameError in line 30 of /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile:
+name 'strconfig' is not defined
+  File "/home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile", line 32, in <module>
+  File "/home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile", line 30, in name_scheme

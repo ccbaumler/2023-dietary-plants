@@ -1,0 +1,2 @@
+SyntaxError in line 38 of /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile:
+Unexpected keyword dir_name in rule definition (Snakefile, line 38)

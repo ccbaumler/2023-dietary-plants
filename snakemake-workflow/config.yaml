@@ -1,11 +1,11 @@
 # Snakemake Config File
 
-group: weight_loss
+group: "weight_loss"
 
 #db: ../../Sketched-db/db.crop-plant-entrez.ref.sig.zip
-db: ../../Sketched-db/db.plant-entrez-ref.sig.zip
+db: "../../Sketched-db/db.plant-entrez-ref.sig.zip"
 
 #k: 21
 #k: 31
-k: 51
+k: "51"
 
