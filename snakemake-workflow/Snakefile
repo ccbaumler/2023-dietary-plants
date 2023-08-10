@@ -65,7 +65,7 @@ rule run_sourmash_sketch:
     #conda:
     #   "sourmash.yml"
     shell:
-        "sourmash sketch dna -p scaled=1000,k=21,k=31,k=51,abund {input.r1} {input.r2} --name '{wildcards.sample}' -o {output}"
+        "sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund {input.r1} {input.r2} --name '{wildcards.sample}' -o {output}"
 
 # Rule for running Sourmash gather
 rule run_sourmash_gather:
