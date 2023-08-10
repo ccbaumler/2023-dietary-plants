@@ -1,0 +1,1471 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 32
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+perform_inner_join       600
+run_sourmash_gather      600
+run_sourmash_sketch       40
+total                   1241
+
+Select jobs to execute...
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520709_1.fastq.gz, input/weight_loss/ERR11520709_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520709.sig.zip
+    jobid: 38
+    reason: Missing output files: output/weight_loss/sketches/ERR11520709.sig.zip
+    wildcards: sample=ERR11520709
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520709_1.fastq.gz input/weight_loss/ERR11520709_2.fastq.gz --name 'ERR11520709' -o output/weight_loss/sketches/ERR11520709.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520722_1.fastq.gz, input/weight_loss/ERR11520722_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520722.sig.zip
+    jobid: 31
+    reason: Missing output files: output/weight_loss/sketches/ERR11520722.sig.zip
+    wildcards: sample=ERR11520722
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520722_1.fastq.gz input/weight_loss/ERR11520722_2.fastq.gz --name 'ERR11520722' -o output/weight_loss/sketches/ERR11520722.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520718_1.fastq.gz, input/weight_loss/ERR11520718_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520718.sig.zip
+    jobid: 24
+    reason: Missing output files: output/weight_loss/sketches/ERR11520718.sig.zip
+    wildcards: sample=ERR11520718
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520718_1.fastq.gz input/weight_loss/ERR11520718_2.fastq.gz --name 'ERR11520718' -o output/weight_loss/sketches/ERR11520718.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520713_1.fastq.gz, input/weight_loss/ERR11520713_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520713.sig.zip
+    jobid: 17
+    reason: Missing output files: output/weight_loss/sketches/ERR11520713.sig.zip
+    wildcards: sample=ERR11520713
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520713_1.fastq.gz input/weight_loss/ERR11520713_2.fastq.gz --name 'ERR11520713' -o output/weight_loss/sketches/ERR11520713.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520693_1.fastq.gz, input/weight_loss/ERR11520693_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520693.sig.zip
+    jobid: 171
+    reason: Missing output files: output/weight_loss/sketches/ERR11520693.sig.zip
+    wildcards: sample=ERR11520693
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520693_1.fastq.gz input/weight_loss/ERR11520693_2.fastq.gz --name 'ERR11520693' -o output/weight_loss/sketches/ERR11520693.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520705_1.fastq.gz, input/weight_loss/ERR11520705_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520705.sig.zip
+    jobid: 10
+    reason: Missing output files: output/weight_loss/sketches/ERR11520705.sig.zip
+    wildcards: sample=ERR11520705
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520705_1.fastq.gz input/weight_loss/ERR11520705_2.fastq.gz --name 'ERR11520705' -o output/weight_loss/sketches/ERR11520705.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520703_1.fastq.gz, input/weight_loss/ERR11520703_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520703.sig.zip
+    jobid: 227
+    reason: Missing output files: output/weight_loss/sketches/ERR11520703.sig.zip
+    wildcards: sample=ERR11520703
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520703_1.fastq.gz input/weight_loss/ERR11520703_2.fastq.gz --name 'ERR11520703' -o output/weight_loss/sketches/ERR11520703.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520721_1.fastq.gz, input/weight_loss/ERR11520721_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520721.sig.zip
+    jobid: 192
+    reason: Missing output files: output/weight_loss/sketches/ERR11520721.sig.zip
+    wildcards: sample=ERR11520721
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520721_1.fastq.gz input/weight_loss/ERR11520721_2.fastq.gz --name 'ERR11520721' -o output/weight_loss/sketches/ERR11520721.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520712_1.fastq.gz, input/weight_loss/ERR11520712_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520712.sig.zip
+    jobid: 248
+    reason: Missing output files: output/weight_loss/sketches/ERR11520712.sig.zip
+    wildcards: sample=ERR11520712
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520712_1.fastq.gz input/weight_loss/ERR11520712_2.fastq.gz --name 'ERR11520712' -o output/weight_loss/sketches/ERR11520712.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520706_1.fastq.gz, input/weight_loss/ERR11520706_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520706.sig.zip
+    jobid: 185
+    reason: Missing output files: output/weight_loss/sketches/ERR11520706.sig.zip
+    wildcards: sample=ERR11520706
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520706_1.fastq.gz input/weight_loss/ERR11520706_2.fastq.gz --name 'ERR11520706' -o output/weight_loss/sketches/ERR11520706.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520704_1.fastq.gz, input/weight_loss/ERR11520704_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520704.sig.zip
+    jobid: 241
+    reason: Missing output files: output/weight_loss/sketches/ERR11520704.sig.zip
+    wildcards: sample=ERR11520704
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520704_1.fastq.gz input/weight_loss/ERR11520704_2.fastq.gz --name 'ERR11520704' -o output/weight_loss/sketches/ERR11520704.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520696_1.fastq.gz, input/weight_loss/ERR11520696_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520696.sig.zip
+    jobid: 234
+    reason: Missing output files: output/weight_loss/sketches/ERR11520696.sig.zip
+    wildcards: sample=ERR11520696
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520696_1.fastq.gz input/weight_loss/ERR11520696_2.fastq.gz --name 'ERR11520696' -o output/weight_loss/sketches/ERR11520696.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520707_1.fastq.gz, input/weight_loss/ERR11520707_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520707.sig.zip
+    jobid: 80
+    reason: Missing output files: output/weight_loss/sketches/ERR11520707.sig.zip
+    wildcards: sample=ERR11520707
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520707_1.fastq.gz input/weight_loss/ERR11520707_2.fastq.gz --name 'ERR11520707' -o output/weight_loss/sketches/ERR11520707.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520726_1.fastq.gz, input/weight_loss/ERR11520726_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520726.sig.zip
+    jobid: 136
+    reason: Missing output files: output/weight_loss/sketches/ERR11520726.sig.zip
+    wildcards: sample=ERR11520726
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520726_1.fastq.gz input/weight_loss/ERR11520726_2.fastq.gz --name 'ERR11520726' -o output/weight_loss/sketches/ERR11520726.sig.zip
+
+[Thu Aug 10 14:39:03 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520695_1.fastq.gz, input/weight_loss/ERR11520695_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520695.sig.zip
+    jobid: 129
+    reason: Missing output files: output/weight_loss/sketches/ERR11520695.sig.zip
+    wildcards: sample=ERR11520695
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520695_1.fastq.gz input/weight_loss/ERR11520695_2.fastq.gz --name 'ERR11520695' -o output/weight_loss/sketches/ERR11520695.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520719_1.fastq.gz, input/weight_loss/ERR11520719_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520719.sig.zip
+    jobid: 276
+    reason: Missing output files: output/weight_loss/sketches/ERR11520719.sig.zip; Code has changed since last execution
+    wildcards: sample=ERR11520719
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520719_1.fastq.gz input/weight_loss/ERR11520719_2.fastq.gz --name 'ERR11520719' -o output/weight_loss/sketches/ERR11520719.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520711_1.fastq.gz, input/weight_loss/ERR11520711_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520711.sig.zip
+    jobid: 73
+    reason: Missing output files: output/weight_loss/sketches/ERR11520711.sig.zip
+    wildcards: sample=ERR11520711
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520711_1.fastq.gz input/weight_loss/ERR11520711_2.fastq.gz --name 'ERR11520711' -o output/weight_loss/sketches/ERR11520711.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520702_1.fastq.gz, input/weight_loss/ERR11520702_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520702.sig.zip
+    jobid: 66
+    reason: Missing output files: output/weight_loss/sketches/ERR11520702.sig.zip
+    wildcards: sample=ERR11520702
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520702_1.fastq.gz input/weight_loss/ERR11520702_2.fastq.gz --name 'ERR11520702' -o output/weight_loss/sketches/ERR11520702.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520720_1.fastq.gz, input/weight_loss/ERR11520720_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520720.sig.zip
+    jobid: 101
+    reason: Missing output files: output/weight_loss/sketches/ERR11520720.sig.zip; Code has changed since last execution
+    wildcards: sample=ERR11520720
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520720_1.fastq.gz input/weight_loss/ERR11520720_2.fastq.gz --name 'ERR11520720' -o output/weight_loss/sketches/ERR11520720.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520699_1.fastq.gz, input/weight_loss/ERR11520699_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520699.sig.zip
+    jobid: 94
+    reason: Missing output files: output/weight_loss/sketches/ERR11520699.sig.zip
+    wildcards: sample=ERR11520699
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520699_1.fastq.gz input/weight_loss/ERR11520699_2.fastq.gz --name 'ERR11520699' -o output/weight_loss/sketches/ERR11520699.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520710_1.fastq.gz, input/weight_loss/ERR11520710_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520710.sig.zip
+    jobid: 178
+    reason: Missing output files: output/weight_loss/sketches/ERR11520710.sig.zip
+    wildcards: sample=ERR11520710
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520710_1.fastq.gz input/weight_loss/ERR11520710_2.fastq.gz --name 'ERR11520710' -o output/weight_loss/sketches/ERR11520710.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520698_1.fastq.gz, input/weight_loss/ERR11520698_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520698.sig.zip
+    jobid: 199
+    reason: Missing output files: output/weight_loss/sketches/ERR11520698.sig.zip
+    wildcards: sample=ERR11520698
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520698_1.fastq.gz input/weight_loss/ERR11520698_2.fastq.gz --name 'ERR11520698' -o output/weight_loss/sketches/ERR11520698.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520692_1.fastq.gz, input/weight_loss/ERR11520692_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520692.sig.zip
+    jobid: 87
+    reason: Missing output files: output/weight_loss/sketches/ERR11520692.sig.zip
+    wildcards: sample=ERR11520692
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520692_1.fastq.gz input/weight_loss/ERR11520692_2.fastq.gz --name 'ERR11520692' -o output/weight_loss/sketches/ERR11520692.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520715_1.fastq.gz, input/weight_loss/ERR11520715_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520715.sig.zip
+    jobid: 220
+    reason: Missing output files: output/weight_loss/sketches/ERR11520715.sig.zip
+    wildcards: sample=ERR11520715
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520715_1.fastq.gz input/weight_loss/ERR11520715_2.fastq.gz --name 'ERR11520715' -o output/weight_loss/sketches/ERR11520715.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520717_1.fastq.gz, input/weight_loss/ERR11520717_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520717.sig.zip
+    jobid: 164
+    reason: Missing output files: output/weight_loss/sketches/ERR11520717.sig.zip
+    wildcards: sample=ERR11520717
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520717_1.fastq.gz input/weight_loss/ERR11520717_2.fastq.gz --name 'ERR11520717' -o output/weight_loss/sketches/ERR11520717.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520701_1.fastq.gz, input/weight_loss/ERR11520701_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520701.sig.zip
+    jobid: 157
+    reason: Missing output files: output/weight_loss/sketches/ERR11520701.sig.zip
+    wildcards: sample=ERR11520701
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520701_1.fastq.gz input/weight_loss/ERR11520701_2.fastq.gz --name 'ERR11520701' -o output/weight_loss/sketches/ERR11520701.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520723_1.fastq.gz, input/weight_loss/ERR11520723_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520723.sig.zip
+    jobid: 269
+    reason: Missing output files: output/weight_loss/sketches/ERR11520723.sig.zip
+    wildcards: sample=ERR11520723
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520723_1.fastq.gz input/weight_loss/ERR11520723_2.fastq.gz --name 'ERR11520723' -o output/weight_loss/sketches/ERR11520723.sig.zip
+
+[Thu Aug 10 14:39:04 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520694_1.fastq.gz, input/weight_loss/ERR11520694_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520694.sig.zip
+    jobid: 150
+    reason: Missing output files: output/weight_loss/sketches/ERR11520694.sig.zip
+    wildcards: sample=ERR11520694
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520694_1.fastq.gz input/weight_loss/ERR11520694_2.fastq.gz --name 'ERR11520694' -o output/weight_loss/sketches/ERR11520694.sig.zip
+
+[Thu Aug 10 14:39:05 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520691_1.fastq.gz, input/weight_loss/ERR11520691_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520691.sig.zip
+    jobid: 262
+    reason: Missing output files: output/weight_loss/sketches/ERR11520691.sig.zip
+    wildcards: sample=ERR11520691
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520691_1.fastq.gz input/weight_loss/ERR11520691_2.fastq.gz --name 'ERR11520691' -o output/weight_loss/sketches/ERR11520691.sig.zip
+
+[Thu Aug 10 14:39:05 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520689_1.fastq.gz, input/weight_loss/ERR11520689_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520689.sig.zip
+    jobid: 143
+    reason: Missing output files: output/weight_loss/sketches/ERR11520689.sig.zip
+    wildcards: sample=ERR11520689
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520689_1.fastq.gz input/weight_loss/ERR11520689_2.fastq.gz --name 'ERR11520689' -o output/weight_loss/sketches/ERR11520689.sig.zip
+
+[Thu Aug 10 14:39:05 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520728_1.fastq.gz, input/weight_loss/ERR11520728_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520728.sig.zip
+    jobid: 255
+    reason: Missing output files: output/weight_loss/sketches/ERR11520728.sig.zip
+    wildcards: sample=ERR11520728
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520728_1.fastq.gz input/weight_loss/ERR11520728_2.fastq.gz --name 'ERR11520728' -o output/weight_loss/sketches/ERR11520728.sig.zip
+
+[Thu Aug 10 14:39:05 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520724_1.fastq.gz, input/weight_loss/ERR11520724_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520724.sig.zip
+    jobid: 206
+    reason: Missing output files: output/weight_loss/sketches/ERR11520724.sig.zip
+    wildcards: sample=ERR11520724
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520724_1.fastq.gz input/weight_loss/ERR11520724_2.fastq.gz --name 'ERR11520724' -o output/weight_loss/sketches/ERR11520724.sig.zip
+[Thu Aug 10 14:40:23 2023]
+Finished job 94.
+1 of 1241 steps (0.1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:40:23 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520699.31.gather.csv
+    jobid: 602
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520699.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520699.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520699, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520699.31.gather.csv
+[Thu Aug 10 14:40:23 2023]
+Finished job 164.
+2 of 1241 steps (0.2%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:40:24 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520716_1.fastq.gz, input/weight_loss/ERR11520716_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520716.sig.zip
+    jobid: 122
+    reason: Missing output files: output/weight_loss/sketches/ERR11520716.sig.zip
+    wildcards: sample=ERR11520716
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520716_1.fastq.gz input/weight_loss/ERR11520716_2.fastq.gz --name 'ERR11520716' -o output/weight_loss/sketches/ERR11520716.sig.zip
+[Thu Aug 10 14:40:32 2023]
+Finished job 234.
+3 of 1241 steps (0.2%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:40:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520717.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520717.51.gather.csv
+    jobid: 904
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520717.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520717.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520717, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520717.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520717.51.gather.csv
+[Thu Aug 10 14:40:40 2023]
+Finished job 38.
+4 of 1241 steps (0.3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:40:40 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520699.21.gather.csv
+    jobid: 600
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520699.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520699.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520699, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520699.21.gather.csv
+[Thu Aug 10 14:40:50 2023]
+Finished job 24.
+5 of 1241 steps (0.4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:40:51 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520696.21.gather.csv
+    jobid: 233
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520696.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520696.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520696, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520696.21.gather.csv
+[Thu Aug 10 14:40:54 2023]
+Finished job 255.
+6 of 1241 steps (0.5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:40:54 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520728.51.gather.csv
+    jobid: 502
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520728.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520728.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520728, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520728.51.gather.csv
+[Thu Aug 10 14:40:57 2023]
+Finished job 101.
+7 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:40:57 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520720.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520720.31.gather.csv
+    jobid: 608
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520720.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520720.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520720, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520720.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520720.31.gather.csv
+[Thu Aug 10 14:40:58 2023]
+Finished job 185.
+8 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:40:58 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520720.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520720.21.gather.csv
+    jobid: 606
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520720.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520720.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520720, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520720.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520720.21.gather.csv
+[Thu Aug 10 14:41:07 2023]
+Finished job 87.
+9 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:08 2023]
+rule run_sourmash_sketch:
+    input: input/weight_loss/ERR11520714_1.fastq.gz, input/weight_loss/ERR11520714_2.fastq.gz
+    output: output/weight_loss/sketches/ERR11520714.sig.zip
+    jobid: 59
+    reason: Missing output files: output/weight_loss/sketches/ERR11520714.sig.zip
+    wildcards: sample=ERR11520714
+    resources: tmpdir=/tmp
+
+sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund input/weight_loss/ERR11520714_1.fastq.gz input/weight_loss/ERR11520714_2.fastq.gz --name 'ERR11520714' -o output/weight_loss/sketches/ERR11520714.sig.zip
+[Thu Aug 10 14:41:08 2023]
+Finished job 157.
+10 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:08 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520728.51.gather.csv
+    jobid: 742
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520728.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520728.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520728, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520728.51.gather.csv
+[Thu Aug 10 14:41:12 2023]
+Finished job 192.
+11 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:13 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520701.31.gather.csv
+    jobid: 656
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520701.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520701.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520701, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520701.31.gather.csv
+[Thu Aug 10 14:41:14 2023]
+Finished job 233.
+12 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:14 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520692.31.gather.csv
+    jobid: 836
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520692.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520692.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520692, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520692.31.gather.csv
+[Thu Aug 10 14:41:16 2023]
+Finished job 602.
+13 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:16 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520720.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.31.gather.csv
+    jobid: 1088
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520720.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520720, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520720.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.31.gather.csv
+[Thu Aug 10 14:41:20 2023]
+Finished job 129.
+14 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:20 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520721.21.gather.csv
+    jobid: 444
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520721.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520721.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520721, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520721.21.gather.csv
+[Thu Aug 10 14:41:21 2023]
+Finished job 136.
+15 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:22 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520728.21.gather.csv
+    jobid: 738
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520728.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520728.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520728, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520728.21.gather.csv
+[Thu Aug 10 14:41:24 2023]
+Finished job 178.
+16 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:25 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520695.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520695.51.gather.csv
+    jobid: 133
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520695.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520695.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520695, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520695.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520695.51.gather.csv
+[Thu Aug 10 14:41:26 2023]
+Finished job 248.
+17 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:26 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520706.31.gather.csv
+    jobid: 680
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520706.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520706.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520706, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520706.31.gather.csv
+[Thu Aug 10 14:41:31 2023]
+Finished job 206.
+18 of 1241 steps (1%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:31 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.51.gather.csv
+    jobid: 1084
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520699.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520699, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.51.gather.csv
+[Thu Aug 10 14:41:32 2023]
+Finished job 269.
+19 of 1241 steps (2%) done
+[Thu Aug 10 14:41:32 2023]
+Finished job 600.
+20 of 1241 steps (2%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520721.31.gather.csv
+    jobid: 446
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520721.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520721.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520721, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520721.31.gather.csv
+
+[Thu Aug 10 14:41:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520721.31.gather.csv
+    jobid: 194
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520721.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520721.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520721, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520721.31.gather.csv
+Select jobs to execute...
+[Thu Aug 10 14:41:32 2023]
+Finished job 31.
+21 of 1241 steps (2%) done
+
+[Thu Aug 10 14:41:33 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520709.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520709.51.gather.csv
+    jobid: 796
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520709.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520709.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520709, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520709.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520709.51.gather.csv
+[Thu Aug 10 14:41:33 2023]
+Finished job 150.
+22 of 1241 steps (2%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:34 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.31.gather.csv
+    jobid: 1220
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520728.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520728, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.31.gather.csv
+[Thu Aug 10 14:41:35 2023]
+Finished job 276.
+23 of 1241 steps (2%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:35 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520706.21.gather.csv
+    jobid: 184
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520706.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520706.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520706, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520706.21.gather.csv
+[Thu Aug 10 14:41:49 2023]
+Finished job 608.
+24 of 1241 steps (2%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:50 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.21.gather.csv
+    jobid: 438
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520706.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520706, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.21.gather.csv
+[Thu Aug 10 14:41:53 2023]
+Finished job 133.
+25 of 1241 steps (2%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:53 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.31.gather.csv
+    jobid: 1136
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520701.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520701, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.31.gather.csv
+[Thu Aug 10 14:41:54 2023]
+Finished job 606.
+26 of 1241 steps (2%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:54 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520695.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520695.21.gather.csv
+    jobid: 128
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520695.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520695.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520695, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520695.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520695.21.gather.csv
+[Thu Aug 10 14:41:56 2023]
+Finished job 10.
+27 of 1241 steps (2%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:41:56 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520705.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520705.31.gather.csv
+    jobid: 12
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520705.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520705.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520705, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520705.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520705.31.gather.csv
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule run_sourmash_gather in file /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile, line 71:
+Job 194  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520721.31.gather.csv
+Select jobs to execute...
+
+[Thu Aug 10 14:42:03 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520696.21.gather.csv
+    jobid: 960
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520696.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520696.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520696, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520696.21.gather.csv
+[Thu Aug 10 14:42:03 2023]
+Finished job 184.
+28 of 1241 steps (2%) done
+[Thu Aug 10 14:42:03 2023]
+Finished job 220.
+29 of 1241 steps (2%) done
+[Thu Aug 10 14:42:03 2023]
+Finished job 73.
+30 of 1241 steps (2%) done
+[Thu Aug 10 14:42:03 2023]
+Finished job 742.
+31 of 1241 steps (2%) done
+[Thu Aug 10 14:42:03 2023]
+Finished job 171.
+32 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:04 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520696.51.gather.csv
+    jobid: 484
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520696.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520696.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520696, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520696.51.gather.csv
+
+[Thu Aug 10 14:42:04 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520722.31.gather.csv
+    jobid: 308
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520722.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520722.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520722, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520722.31.gather.csv
+
+[Thu Aug 10 14:42:04 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520723.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520723.51.gather.csv
+    jobid: 754
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520723.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520723.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520723, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520723.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520723.51.gather.csv
+
+[Thu Aug 10 14:42:04 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520719.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520719.21.gather.csv
+    jobid: 756
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520719.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520719.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520719, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520719.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520719.21.gather.csv
+
+[Thu Aug 10 14:42:04 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520705.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520705.51.gather.csv
+    jobid: 532
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520705.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520705.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520705, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520705.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520705.51.gather.csv
+Select jobs to execute...
+[Thu Aug 10 14:42:05 2023]
+Finished job 656.
+33 of 1241 steps (3%) done
+
+[Thu Aug 10 14:42:05 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520692.51.gather.csv
+    jobid: 838
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520692.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520692.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520692, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520692.51.gather.csv
+[Thu Aug 10 14:42:05 2023]
+Finished job 17.
+34 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:06 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520699.31.gather.csv
+    jobid: 842
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520699.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520699.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520699, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520699.31.gather.csv
+[Thu Aug 10 14:42:09 2023]
+Finished job 80.
+35 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:10 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.51.gather.csv
+    jobid: 1030
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520722.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520722, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.51.gather.csv
+[Thu Aug 10 14:42:11 2023]
+Finished job 262.
+36 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:12 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520692.21.gather.csv
+    jobid: 834
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520692.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520692.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520692, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520692.21.gather.csv
+[Thu Aug 10 14:42:13 2023]
+Finished job 199.
+37 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:14 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.51.gather.csv
+    jobid: 346
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520711.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520711, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.51.gather.csv
+[Thu Aug 10 14:42:16 2023]
+Finished job 143.
+38 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:16 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.31.gather.csv
+    jobid: 1028
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520722.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520722, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.31.gather.csv
+[Thu Aug 10 14:42:16 2023]
+Finished job 680.
+39 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520707.51.gather.csv
+    jobid: 832
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520707.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520707.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520707, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520707.51.gather.csv
+[Thu Aug 10 14:42:17 2023]
+Finished job 738.
+40 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:18 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.51.gather.csv
+    jobid: 442
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520706.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520706, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.51.gather.csv
+[Thu Aug 10 14:42:20 2023]
+Finished job 128.
+41 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:21 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.31.gather.csv
+    jobid: 596
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520692.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520692, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.31.gather.csv
+[Thu Aug 10 14:42:21 2023]
+Finished job 12.
+42 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:22 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520707.31.gather.csv
+    jobid: 830
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520707.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520707.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520707, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520707.31.gather.csv
+[Thu Aug 10 14:42:22 2023]
+Finished job 66.
+43 of 1241 steps (3%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:23 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520699.51.gather.csv
+    jobid: 844
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520699.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520699.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520699, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520699.51.gather.csv
+[Thu Aug 10 14:42:30 2023]
+Finished job 241.
+44 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:31 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.21.gather.csv
+    jobid: 594
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520692.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520692, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.21.gather.csv
+[Thu Aug 10 14:42:39 2023]
+Finished job 122.
+45 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:40 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv
+    jobid: 1026
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520722.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520722, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv
+[Thu Aug 10 14:42:53 2023]
+Finished job 754.
+46 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:54 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.31.gather.csv
+    jobid: 344
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520711.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520711, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.31.gather.csv
+[Thu Aug 10 14:42:54 2023]
+Finished job 227.
+47 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:55 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520696.51.gather.csv
+    jobid: 964
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520696.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520696.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520696, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520696.51.gather.csv
+[Thu Aug 10 14:42:55 2023]
+Finished job 532.
+48 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:42:56 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.31.gather.csv
+    jobid: 440
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520706.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520706, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.31.gather.csv
+[Thu Aug 10 14:43:00 2023]
+Finished job 756.
+49 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:43:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.31.gather.csv
+    jobid: 896
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520701.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520701, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.31.gather.csv
+[Thu Aug 10 14:43:11 2023]
+Finished job 596.
+50 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:43:11 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv
+    jobid: 1082
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520699.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520699, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv
+[Thu Aug 10 14:43:24 2023]
+Finished job 594.
+51 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:43:24 2023]
+rule perform_inner_join:
+    input: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.31.gather.csv
+    output: output/weight_loss/crop_chloroplast.100/cmon_name_annot/crop_chloroplast.100.ERR11520692.31.annot.gather.csv
+    jobid: 595
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/cmon_name_annot/crop_chloroplast.100.ERR11520692.31.annot.gather.csv; Input files updated by another job: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.31.gather.csv
+    wildcards: db=crop_chloroplast.100, sample=ERR11520692, k=31
+    resources: tmpdir=/tmp
+
+python join_common_name_dbs.py output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.31.gather.csv output/weight_loss/crop_chloroplast.100/cmon_name_annot/crop_chloroplast.100.ERR11520692.31.annot.gather.csv
+[Thu Aug 10 14:43:26 2023]
+Finished job 59.
+52 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:43:26 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.21.gather.csv
+    jobid: 1080
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520699.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520699, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.21.gather.csv
+[Thu Aug 10 14:43:36 2023]
+Finished job 595.
+53 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:43:37 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520718.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv
+    jobid: 1024
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520718.sig.zip
+    wildcards: db=trnl.1, sample=ERR11520718, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520718.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv
+[Thu Aug 10 14:44:34 2023]
+Finished job 502.
+54 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:44:35 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.21.gather.csv
+    jobid: 342
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520711.sig.zip
+    wildcards: db=all_chloroplast.1000, sample=ERR11520711, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.21.gather.csv
+[Thu Aug 10 14:44:36 2023]
+Finished job 438.
+55 of 1241 steps (4%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:44:37 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520704.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520704.21.gather.csv
+    jobid: 240
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520704.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520704.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520704, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520704.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520704.21.gather.csv
+[Thu Aug 10 14:44:40 2023]
+Finished job 444.
+56 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:44:41 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.21.gather.csv
+    jobid: 894
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520701.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520701, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.21.gather.csv
+[Thu Aug 10 14:44:54 2023]
+Finished job 484.
+57 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:44:54 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520705.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520705.51.gather.csv
+    jobid: 14
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520705.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520705.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520705, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520705.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520705.51.gather.csv
+[Thu Aug 10 14:44:59 2023]
+Finished job 446.
+58 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:44:59 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520707.51.gather.csv
+    jobid: 592
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520707.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520707.sig.zip
+    wildcards: db=crop_chloroplast.100, sample=ERR11520707, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520707.51.gather.csv
+[Thu Aug 10 14:45:03 2023]
+Finished job 240.
+59 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:45:04 2023]
+rule perform_inner_join:
+    input: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.21.gather.csv
+    output: output/weight_loss/crop_chloroplast.100/cmon_name_annot/crop_chloroplast.100.ERR11520692.21.annot.gather.csv
+    jobid: 593
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/cmon_name_annot/crop_chloroplast.100.ERR11520692.21.annot.gather.csv; Input files updated by another job: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.21.gather.csv
+    wildcards: db=crop_chloroplast.100, sample=ERR11520692, k=21
+    resources: tmpdir=/tmp
+
+python join_common_name_dbs.py output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520692.21.gather.csv output/weight_loss/crop_chloroplast.100/cmon_name_annot/crop_chloroplast.100.ERR11520692.21.annot.gather.csv
+[Thu Aug 10 14:45:15 2023]
+Finished job 593.
+60 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:45:16 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520696.31.gather.csv
+    jobid: 962
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520696.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520696.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520696, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520696.31.gather.csv
+[Thu Aug 10 14:45:20 2023]
+Finished job 442.
+61 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:45:20 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520707.21.gather.csv
+    jobid: 828
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520707.21.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520707.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520707, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 21 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520707.21.gather.csv
+[Thu Aug 10 14:45:20 2023]
+Finished job 14.
+62 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:45:21 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520711.51.gather.csv
+    jobid: 826
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520711.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520711.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520711, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520711.51.gather.csv
+[Thu Aug 10 14:45:33 2023]
+Finished job 308.
+63 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:45:33 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520711.31.gather.csv
+    jobid: 824
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520711.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520711.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520711, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520711.31.gather.csv
+[Thu Aug 10 14:45:45 2023]
+Finished job 346.
+64 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:45:45 2023]
+rule perform_inner_join:
+    input: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.51.gather.csv
+    output: output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520711.51.annot.gather.csv
+    jobid: 345
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520711.51.annot.gather.csv; Input files updated by another job: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.51.gather.csv
+    wildcards: db=all_chloroplast.1000, sample=ERR11520711, k=51
+    resources: tmpdir=/tmp
+
+python join_common_name_dbs.py output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.51.gather.csv output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520711.51.annot.gather.csv
+[Thu Aug 10 14:45:52 2023]
+Finished job 592.
+65 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:45:52 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520694.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520694.51.gather.csv
+    jobid: 892
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520694.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520694.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520694, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520694.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520694.51.gather.csv
+[Thu Aug 10 14:45:56 2023]
+Finished job 345.
+66 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:45:57 2023]
+rule perform_inner_join:
+    input: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.51.gather.csv
+    output: output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520706.51.annot.gather.csv
+    jobid: 441
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520706.51.annot.gather.csv; Input files updated by another job: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.51.gather.csv
+    wildcards: db=all_chloroplast.1000, sample=ERR11520706, k=51
+    resources: tmpdir=/tmp
+
+python join_common_name_dbs.py output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.51.gather.csv output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520706.51.annot.gather.csv
+[Thu Aug 10 14:46:09 2023]
+Finished job 441.
+67 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:46:09 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520710.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520710.51.gather.csv
+    jobid: 182
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520710.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520710.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520710, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520710.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520710.51.gather.csv
+[Thu Aug 10 14:46:09 2023]
+Finished job 344.
+68 of 1241 steps (5%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:46:10 2023]
+rule perform_inner_join:
+    input: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.31.gather.csv
+    output: output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520711.31.annot.gather.csv
+    jobid: 343
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520711.31.annot.gather.csv; Input files updated by another job: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.31.gather.csv
+    wildcards: db=all_chloroplast.1000, sample=ERR11520711, k=31
+    resources: tmpdir=/tmp
+
+python join_common_name_dbs.py output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.31.gather.csv output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520711.31.annot.gather.csv
+[Thu Aug 10 14:46:16 2023]
+Finished job 440.
+69 of 1241 steps (6%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:46:17 2023]
+rule perform_inner_join:
+    input: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.31.gather.csv
+    output: output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520706.31.annot.gather.csv
+    jobid: 439
+    reason: Missing output files: output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520706.31.annot.gather.csv; Input files updated by another job: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.31.gather.csv
+    wildcards: db=all_chloroplast.1000, sample=ERR11520706, k=31
+    resources: tmpdir=/tmp
+
+python join_common_name_dbs.py output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520706.31.gather.csv output/weight_loss/all_chloroplast.1000/cmon_name_annot/all_chloroplast.1000.ERR11520706.31.annot.gather.csv
+[Thu Aug 10 14:46:21 2023]
+Finished job 343.
+70 of 1241 steps (6%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:46:22 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520706.31.gather.csv
+    jobid: 187
+    reason: Missing output files: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520706.31.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520706.sig.zip
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520706, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520706.31.gather.csv
+[Thu Aug 10 14:46:27 2023]
+Finished job 439.
+71 of 1241 steps (6%) done
+Select jobs to execute...
+
+[Thu Aug 10 14:46:28 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.51.gather.csv
+    jobid: 898
+    reason: Missing output files: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.51.gather.csv; Input files updated by another job: output/weight_loss/sketches/ERR11520701.sig.zip
+    wildcards: db=all_chloroplast.100, sample=ERR11520701, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.51.gather.csv
+Terminating processes on user request, this might take some time.
+[Thu Aug 10 14:46:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 182
+    input: output/weight_loss/sketches/ERR11520710.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520710.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520710.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520710.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 14:46:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 898
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520701.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 14:46:33 2023]
+Error in rule run_sourmash_gather:
+    jobid: 187
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520706.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520706.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Cancelling snakemake on user request.

@@ -1,0 +1,2493 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 32
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+perform_inner_join       124
+run_sourmash_gather      124
+total                    249
+
+Select jobs to execute...
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520697.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.51.gather.csv
+    jobid: 1048
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520697, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520697.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.51.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.21.gather.csv
+    jobid: 1104
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520716, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520716.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.21.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.31.gather.csv
+    jobid: 1160
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520706, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.31.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520712.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.51.gather.csv
+    jobid: 1216
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520712, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520712.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.51.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.31.gather.csv
+    jobid: 1202
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520696, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.31.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520704.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.51.gather.csv
+    jobid: 1210
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520704, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520704.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.51.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520718.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.31.gather.csv
+    jobid: 1022
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520718, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520718.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.31.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520705.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.21.gather.csv
+    jobid: 1008
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520705, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520705.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.21.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.31.gather.csv
+    jobid: 1064
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520711, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.31.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520713.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.31.gather.csv
+    jobid: 1016
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520713, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520713.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.31.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.51.gather.csv
+    jobid: 1072
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520707, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.51.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520694.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.21.gather.csv
+    jobid: 1128
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520694, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520694.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.21.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520708.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.31.gather.csv
+    jobid: 1184
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520708, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520708.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.31.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520719.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.51.gather.csv
+    jobid: 1240
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520719, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520719.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.51.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520718.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.21.gather.csv
+    jobid: 1020
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520718, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520718.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.21.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520700.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.31.gather.csv
+    jobid: 1100
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520700, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520700.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.31.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520710.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.51.gather.csv
+    jobid: 1156
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520710, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520710.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.51.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520712.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.21.gather.csv
+    jobid: 1212
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520712, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520712.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.21.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520697.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.21.gather.csv
+    jobid: 1044
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520697, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520697.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.21.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.21.gather.csv
+    jobid: 1164
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520721, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.21.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520713.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.51.gather.csv
+    jobid: 1018
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520713, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520713.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.51.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.21.gather.csv
+    jobid: 1074
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520692, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.21.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520694.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.31.gather.csv
+    jobid: 1130
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520694, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520694.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.31.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520708.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.51.gather.csv
+    jobid: 1186
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520708, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520708.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.51.gather.csv
+
+[Thu Aug 10 12:33:01 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/crop_chloroplast/gather/crop_chloroplast.ERR11520716.31.gather.csv
+    jobid: 124
+    reason: Missing output files: output/weight_loss/crop_chloroplast/gather/crop_chloroplast.ERR11520716.31.gather.csv
+    wildcards: db=crop_chloroplast, sample=ERR11520716, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520716.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast/gather/crop_chloroplast.ERR11520716.31.gather.csv
+
+[Thu Aug 10 12:33:02 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520700.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.51.gather.csv
+    jobid: 1102
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520700, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520700.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.51.gather.csv
+
+[Thu Aug 10 12:33:02 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520697.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.31.gather.csv
+    jobid: 1046
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520697, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520697.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.31.gather.csv
+
+[Thu Aug 10 12:33:02 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.21.gather.csv
+    jobid: 1158
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520706, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.21.gather.csv
+
+[Thu Aug 10 12:33:02 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520712.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.31.gather.csv
+    jobid: 1214
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520712, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520712.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.31.gather.csv
+
+[Thu Aug 10 12:33:02 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.31.gather.csv
+    jobid: 1076
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520692, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.31.gather.csv
+
+[Thu Aug 10 12:33:02 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520715.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.21.gather.csv
+    jobid: 1188
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520715, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520715.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.21.gather.csv
+
+[Thu Aug 10 12:33:02 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520694.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.51.gather.csv
+    jobid: 1132
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520694, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520694.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.51.gather.csv
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1048
+    input: output/weight_loss/sketches/ERR11520697.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520697.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1160
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1020
+    input: output/weight_loss/sketches/ERR11520718.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520718.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1164
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1214
+    input: output/weight_loss/sketches/ERR11520712.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520712.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1158
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1018
+    input: output/weight_loss/sketches/ERR11520713.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520713.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1044
+    input: output/weight_loss/sketches/ERR11520697.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520697.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1008
+    input: output/weight_loss/sketches/ERR11520705.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520705.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1216
+    input: output/weight_loss/sketches/ERR11520712.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520712.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1184
+    input: output/weight_loss/sketches/ERR11520708.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520708.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1074
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1102
+    input: output/weight_loss/sketches/ERR11520700.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520700.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1188
+    input: output/weight_loss/sketches/ERR11520715.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520715.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1100
+    input: output/weight_loss/sketches/ERR11520700.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520700.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1076
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1210
+    input: output/weight_loss/sketches/ERR11520704.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520704.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1156
+    input: output/weight_loss/sketches/ERR11520710.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520710.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1130
+    input: output/weight_loss/sketches/ERR11520694.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520694.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1132
+    input: output/weight_loss/sketches/ERR11520694.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520694.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1046
+    input: output/weight_loss/sketches/ERR11520697.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520697.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520697.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1128
+    input: output/weight_loss/sketches/ERR11520694.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520694.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520694.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1022
+    input: output/weight_loss/sketches/ERR11520718.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520718.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1202
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:16 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1212
+    input: output/weight_loss/sketches/ERR11520712.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520712.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520712.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:17 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1104
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520716.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:17 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1186
+    input: output/weight_loss/sketches/ERR11520708.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520708.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:17 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1064
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:17 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1016
+    input: output/weight_loss/sketches/ERR11520713.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520713.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:17 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1072
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:17 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1240
+    input: output/weight_loss/sketches/ERR11520719.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520719.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520710.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.21.gather.csv
+    jobid: 1152
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520710, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520710.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.21.gather.csv
+Select jobs to execute...
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.21.gather.csv
+    jobid: 1062
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520711, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520703.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.31.gather.csv
+    jobid: 1196
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520703, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520703.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.31.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.31.gather.csv
+    jobid: 1028
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520722, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.31.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.51.gather.csv
+    jobid: 1084
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520699, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520717.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.21.gather.csv
+    jobid: 1140
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520717, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520717.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520702.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.21.gather.csv
+    jobid: 1056
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520702, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520702.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520695.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.31.gather.csv
+    jobid: 1112
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520695, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520695.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.31.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.51.gather.csv
+    jobid: 1168
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520721, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520691.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.21.gather.csv
+    jobid: 1224
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520691, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520691.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520724.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.21.gather.csv
+    jobid: 1176
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520724, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520724.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520723.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.31.gather.csv
+    jobid: 1232
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520723, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520723.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.31.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520727.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.21.gather.csv
+    jobid: 1092
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520727, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520727.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.51.gather.csv
+    jobid: 1030
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520722, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520715.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.51.gather.csv
+    jobid: 1192
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520715, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520715.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520714.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.31.gather.csv
+    jobid: 1052
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520714, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520714.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.31.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.51.gather.csv
+    jobid: 1108
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520716, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520716.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.31.gather.csv
+    jobid: 1220
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520728, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.31.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520702.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.51.gather.csv
+    jobid: 1060
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520702, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520702.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520726.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.21.gather.csv
+    jobid: 1116
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520726, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520726.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520698.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.31.gather.csv
+    jobid: 1172
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520698, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520698.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.31.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520691.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.51.gather.csv
+    jobid: 1228
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520691, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520691.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv
+    jobid: 1026
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520722, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv
+    jobid: 1082
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520699, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.51.gather.csv
+    jobid: 1138
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520701, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520703.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.21.gather.csv
+    jobid: 1194
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520703, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520703.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520714.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.51.gather.csv
+    jobid: 1054
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520714, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520714.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520695.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.21.gather.csv
+    jobid: 1110
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520695, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520695.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.21.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.31.gather.csv
+    jobid: 1166
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520721, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.31.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.51.gather.csv
+    jobid: 1222
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520728, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.51.gather.csv
+
+[Thu Aug 10 12:33:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520690.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.51.gather.csv
+    jobid: 1006
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520690, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520690.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.51.gather.csv
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule run_sourmash_gather in file /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile, line 71:
+Job 124  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+output/weight_loss/crop_chloroplast/gather/crop_chloroplast.ERR11520716.31.gather.csv
+Select jobs to execute...
+
+[Thu Aug 10 12:33:23 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.21.gather.csv
+    jobid: 1080
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520699, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.21.gather.csv
+Select jobs to execute...
+[Thu Aug 10 12:33:30 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1152
+    input: output/weight_loss/sketches/ERR11520710.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520710.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:30 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520718.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv
+    jobid: 1024
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520718, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520718.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv
+[Thu Aug 10 12:33:30 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1062
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Thu Aug 10 12:33:30 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1196
+    input: output/weight_loss/sketches/ERR11520703.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520703.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:30 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1084
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1028
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1140
+    input: output/weight_loss/sketches/ERR11520717.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520717.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:31 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.31.gather.csv
+    jobid: 1136
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520701, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.31.gather.csv
+Select jobs to execute...
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1168
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1056
+    input: output/weight_loss/sketches/ERR11520702.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520702.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1224
+    input: output/weight_loss/sketches/ERR11520691.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520691.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1112
+    input: output/weight_loss/sketches/ERR11520695.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520695.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1232
+    input: output/weight_loss/sketches/ERR11520723.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520723.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1176
+    input: output/weight_loss/sketches/ERR11520724.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520724.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:31 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520705.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.51.gather.csv
+    jobid: 1012
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520705, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520705.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.51.gather.csv
+
+[Thu Aug 10 12:33:31 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520689.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.21.gather.csv
+    jobid: 1122
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520689, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520689.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.21.gather.csv
+
+[Thu Aug 10 12:33:31 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.51.gather.csv
+    jobid: 1066
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520711, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.51.gather.csv
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1030
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:31 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520724.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.31.gather.csv
+    jobid: 1178
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520724, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520724.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.31.gather.csv
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1092
+    input: output/weight_loss/sketches/ERR11520727.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520727.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1192
+    input: output/weight_loss/sketches/ERR11520715.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520715.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1052
+    input: output/weight_loss/sketches/ERR11520714.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520714.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1220
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1116
+    input: output/weight_loss/sketches/ERR11520726.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520726.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:31 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1060
+    input: output/weight_loss/sketches/ERR11520702.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520702.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1026
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520705.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.31.gather.csv
+    jobid: 1010
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520705, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520705.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.31.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/crop_chloroplast/gather/crop_chloroplast.ERR11520721.31.gather.csv
+    jobid: 194
+    reason: Missing output files: output/weight_loss/crop_chloroplast/gather/crop_chloroplast.ERR11520721.31.gather.csv
+    wildcards: db=crop_chloroplast, sample=ERR11520721, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast/gather/crop_chloroplast.ERR11520721.31.gather.csv
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1172
+    input: output/weight_loss/sketches/ERR11520698.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520698.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1108
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520716.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520723.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.51.gather.csv
+    jobid: 1234
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520723, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520723.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.51.gather.csv
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1054
+    input: output/weight_loss/sketches/ERR11520714.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520714.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1082
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520689.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.31.gather.csv
+    jobid: 1124
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520689, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520689.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.31.gather.csv
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1138
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1228
+    input: output/weight_loss/sketches/ERR11520691.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520691.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520725.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.21.gather.csv
+    jobid: 1038
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520725, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520725.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.21.gather.csv
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1166
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520721.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520727.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.31.gather.csv
+    jobid: 1094
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520727, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520727.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.31.gather.csv
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1110
+    input: output/weight_loss/sketches/ERR11520695.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520695.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520693.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.51.gather.csv
+    jobid: 1150
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520693, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520693.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.51.gather.csv
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1194
+    input: output/weight_loss/sketches/ERR11520703.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520703.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520704.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.21.gather.csv
+    jobid: 1206
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520704, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520704.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.21.gather.csv
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1222
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520723.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.21.gather.csv
+    jobid: 1230
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520723, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520723.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.21.gather.csv
+Select jobs to execute...
+[Thu Aug 10 12:33:32 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1006
+    input: output/weight_loss/sketches/ERR11520690.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520690.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520709.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.31.gather.csv
+    jobid: 1034
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520709, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520709.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.31.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.21.gather.csv
+    jobid: 1068
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520707, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.21.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520724.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.51.gather.csv
+    jobid: 1180
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520724, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520724.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.51.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520719.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.21.gather.csv
+    jobid: 1236
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520719, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520719.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.21.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520713.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.21.gather.csv
+    jobid: 1014
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520713, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520713.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.21.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520709.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.21.gather.csv
+    jobid: 1032
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520709, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520709.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.21.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520720.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.31.gather.csv
+    jobid: 1088
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520720, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520720.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.31.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520717.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.51.gather.csv
+    jobid: 1144
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520717, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520717.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.51.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.21.gather.csv
+    jobid: 1200
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520696, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.21.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520691.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.31.gather.csv
+    jobid: 1226
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520691, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520691.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.31.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520698.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.21.gather.csv
+    jobid: 1170
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520698, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520698.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.21.gather.csv
+
+[Thu Aug 10 12:33:32 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520695.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.51.gather.csv
+    jobid: 1114
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520695, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520695.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.51.gather.csv
+
+[Thu Aug 10 12:33:33 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520725.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.31.gather.csv
+    jobid: 1040
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520725, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520725.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.31.gather.csv
+
+[Thu Aug 10 12:33:33 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520690.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.31.gather.csv
+    jobid: 1004
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520690, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520690.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.31.gather.csv
+
+[Thu Aug 10 12:33:33 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520726.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.31.gather.csv
+    jobid: 1118
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520726, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520726.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.31.gather.csv
+Select jobs to execute...
+
+[Thu Aug 10 12:33:33 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520693.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.21.gather.csv
+    jobid: 1146
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520693, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520693.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.21.gather.csv
+Select jobs to execute...
+[Thu Aug 10 12:33:37 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1080
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:37 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520720.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.51.gather.csv
+    jobid: 1090
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520720, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520720.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.51.gather.csv
+[Thu Aug 10 12:33:44 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1024
+    input: output/weight_loss/sketches/ERR11520718.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520718.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Thu Aug 10 12:33:45 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.31.gather.csv
+    jobid: 1070
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520707, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.31.gather.csv
+[Thu Aug 10 12:33:45 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1136
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Thu Aug 10 12:33:45 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1012
+    input: output/weight_loss/sketches/ERR11520705.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520705.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:45 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520689.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.51.gather.csv
+    jobid: 1126
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520689, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520689.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.51.gather.csv
+[Thu Aug 10 12:33:45 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1066
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520711.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:45 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1122
+    input: output/weight_loss/sketches/ERR11520689.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520689.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Thu Aug 10 12:33:46 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1178
+    input: output/weight_loss/sketches/ERR11520724.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520724.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:46 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520726.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.51.gather.csv
+    jobid: 1120
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520726, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520726.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.51.gather.csv
+
+[Thu Aug 10 12:33:46 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520716.31.gather.csv
+    jobid: 626
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520716.31.gather.csv
+    wildcards: db=crop_chloroplast.100, sample=ERR11520716, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520716.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520716.31.gather.csv
+Select jobs to execute...
+[Thu Aug 10 12:33:46 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1010
+    input: output/weight_loss/sketches/ERR11520705.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520705.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520705.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:46 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1124
+    input: output/weight_loss/sketches/ERR11520689.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520689.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:46 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1038
+    input: output/weight_loss/sketches/ERR11520725.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520725.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:46 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1234
+    input: output/weight_loss/sketches/ERR11520723.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520723.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:46 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1094
+    input: output/weight_loss/sketches/ERR11520727.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520727.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:46 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520714.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.21.gather.csv
+    jobid: 1050
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520714, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520714.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.21.gather.csv
+
+[Thu Aug 10 12:33:46 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520719.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.31.gather.csv
+    jobid: 1238
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520719, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520719.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.31.gather.csv
+[Thu Aug 10 12:33:46 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1150
+    input: output/weight_loss/sketches/ERR11520693.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520693.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Thu Aug 10 12:33:46 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1206
+    input: output/weight_loss/sketches/ERR11520704.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520704.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:46 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1230
+    input: output/weight_loss/sketches/ERR11520723.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520723.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520723.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:46 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.51.gather.csv
+    jobid: 1162
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520706, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.51.gather.csv
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.31.gather.csv
+    jobid: 1106
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520716, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520716.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.31.gather.csv
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.21.gather.csv
+    jobid: 1134
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520701, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.21.gather.csv
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520727.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.51.gather.csv
+    jobid: 1096
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520727, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520727.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.51.gather.csv
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520715.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.31.gather.csv
+    jobid: 1190
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520715, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520715.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.31.gather.csv
+Select jobs to execute...
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1236
+    input: output/weight_loss/sketches/ERR11520719.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520719.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1032
+    input: output/weight_loss/sketches/ERR11520709.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520709.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1034
+    input: output/weight_loss/sketches/ERR11520709.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520709.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1068
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1180
+    input: output/weight_loss/sketches/ERR11520724.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520724.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520724.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1014
+    input: output/weight_loss/sketches/ERR11520713.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520713.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520713.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1170
+    input: output/weight_loss/sketches/ERR11520698.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520698.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520721.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520721.31.gather.csv
+    jobid: 686
+    reason: Missing output files: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520721.31.gather.csv
+    wildcards: db=crop_chloroplast.100, sample=ERR11520721, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520721.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip --threshold-bp 0 -k 31 -o output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520721.31.gather.csv
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1088
+    input: output/weight_loss/sketches/ERR11520720.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520720.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520717.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.31.gather.csv
+    jobid: 1142
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520717, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520717.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.31.gather.csv
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1200
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520703.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.51.gather.csv
+    jobid: 1198
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520703, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520703.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.51.gather.csv
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1114
+    input: output/weight_loss/sketches/ERR11520695.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520695.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520695.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1144
+    input: output/weight_loss/sketches/ERR11520717.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520717.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1226
+    input: output/weight_loss/sketches/ERR11520691.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520691.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1040
+    input: output/weight_loss/sketches/ERR11520725.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520725.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1004
+    input: output/weight_loss/sketches/ERR11520690.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520690.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1118
+    input: output/weight_loss/sketches/ERR11520726.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520726.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:47 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1146
+    input: output/weight_loss/sketches/ERR11520693.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520693.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.21.gather.csv
+    jobid: 1218
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520728, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.21.gather.csv
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520709.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.51.gather.csv
+    jobid: 1036
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520709, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520709.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.51.gather.csv
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520693.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.31.gather.csv
+    jobid: 1148
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520693, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520693.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.31.gather.csv
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.51.gather.csv
+    jobid: 1204
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520696, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.51.gather.csv
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.51.gather.csv
+    jobid: 1078
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520692, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.51.gather.csv
+
+[Thu Aug 10 12:33:47 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520710.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.31.gather.csv
+    jobid: 1154
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520710, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520710.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.31.gather.csv
+
+[Thu Aug 10 12:33:48 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520690.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.21.gather.csv
+    jobid: 1002
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520690, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520690.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.21.gather.csv
+
+[Thu Aug 10 12:33:48 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520702.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.31.gather.csv
+    jobid: 1058
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520702, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520702.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.31.gather.csv
+
+[Thu Aug 10 12:33:48 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520698.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.51.gather.csv
+    jobid: 1174
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520698, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520698.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.51.gather.csv
+Select jobs to execute...
+
+[Thu Aug 10 12:33:48 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520708.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.21.gather.csv
+    jobid: 1182
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520708, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520708.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.21.gather.csv
+
+[Thu Aug 10 12:33:48 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520720.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.21.gather.csv
+    jobid: 1086
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520720, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520720.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.21.gather.csv
+
+[Thu Aug 10 12:33:48 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520704.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.31.gather.csv
+    jobid: 1208
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.31.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520704, k=31
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520704.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.31.gather.csv
+
+[Thu Aug 10 12:33:48 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520725.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.51.gather.csv
+    jobid: 1042
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.51.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520725, k=51
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520725.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.51.gather.csv
+
+[Thu Aug 10 12:33:48 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520700.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.21.gather.csv
+    jobid: 1098
+    reason: Missing output files: output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.21.gather.csv
+    wildcards: db=trnl.1, sample=ERR11520700, k=21
+    resources: tmpdir=/tmp
+
+sourmash gather output/weight_loss/sketches/ERR11520700.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.21.gather.csv
+Waiting at most 5 seconds for missing files.
+[Thu Aug 10 12:33:52 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1090
+    input: output/weight_loss/sketches/ERR11520720.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520720.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+MissingOutputException in rule run_sourmash_gather in file /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile, line 71:
+Job 194  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+output/weight_loss/crop_chloroplast/gather/crop_chloroplast.ERR11520721.31.gather.csv
+[Thu Aug 10 12:33:58 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1070
+    input: output/weight_loss/sketches/ERR11520707.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520707.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520707.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:58 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1126
+    input: output/weight_loss/sketches/ERR11520689.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520689.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520689.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:58 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1120
+    input: output/weight_loss/sketches/ERR11520726.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520726.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520726.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1050
+    input: output/weight_loss/sketches/ERR11520714.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520714.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520714.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1238
+    input: output/weight_loss/sketches/ERR11520719.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520719.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520719.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1134
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520701.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1106
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520716.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520716.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1096
+    input: output/weight_loss/sketches/ERR11520727.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520727.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520727.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1162
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520706.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520706.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:33:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1190
+    input: output/weight_loss/sketches/ERR11520715.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520715.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520715.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1142
+    input: output/weight_loss/sketches/ERR11520717.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520717.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520717.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1198
+    input: output/weight_loss/sketches/ERR11520703.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520703.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520703.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1218
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520728.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1036
+    input: output/weight_loss/sketches/ERR11520709.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520709.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520709.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1148
+    input: output/weight_loss/sketches/ERR11520693.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520693.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520693.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1204
+    input: output/weight_loss/sketches/ERR11520696.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520696.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520696.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1154
+    input: output/weight_loss/sketches/ERR11520710.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520710.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520710.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1078
+    input: output/weight_loss/sketches/ERR11520692.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520692.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520692.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1058
+    input: output/weight_loss/sketches/ERR11520702.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520702.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520702.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1002
+    input: output/weight_loss/sketches/ERR11520690.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520690.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520690.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1174
+    input: output/weight_loss/sketches/ERR11520698.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520698.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520698.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1086
+    input: output/weight_loss/sketches/ERR11520720.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520720.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520720.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1208
+    input: output/weight_loss/sketches/ERR11520704.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.31.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520704.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 31 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520704.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1182
+    input: output/weight_loss/sketches/ERR11520708.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520708.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520708.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1098
+    input: output/weight_loss/sketches/ERR11520700.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.21.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520700.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 21 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520700.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Thu Aug 10 12:34:00 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1042
+    input: output/weight_loss/sketches/ERR11520725.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.51.gather.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520725.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.sig --threshold-bp 0 -k 51 -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520725.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule run_sourmash_gather in file /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile, line 71:
+Job 626  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520716.31.gather.csv
+Waiting at most 5 seconds for missing files.
+MissingOutputException in rule run_sourmash_gather in file /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile, line 71:
+Job 686  completed successfully, but some output files are missing. Missing files after 5 seconds. This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait:
+output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520721.31.gather.csv
+Exiting because a job execution failed. Look above for error message
+Complete log: .snakemake/log/2023-08-10T123246.970769.snakemake.log
