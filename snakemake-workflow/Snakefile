@@ -62,8 +62,8 @@ rule run_sourmash_sketch:
         r2="input/" + config["group"] + "/{sample}_2.fastq.gz"
     output:
         "output/" + config["group"] + "/sketches/{sample}.sig.zip"
-    conda:
-        "sourmash.yml"
+    #conda:
+    #   "sourmash.yml"
     shell:
         "sourmash sketch dna -p scaled=1000,k=21,k=31,k=51,abund {input.r1} {input.r2} --name '{wildcards.sample}' -o {output}"
 
@@ -74,8 +74,8 @@ rule run_sourmash_gather:
     output:
         #"output/prefetch/{sample}.prefetch.csv" #{db}.{ksize}.{sample}
         "output/" + config["group"] + "/{db}/gather/{db}.{sample}.{k}.gather.csv"
-    conda:
-        "sourmash.yml"
+    #conda:
+    #   "sourmash.yml"
     params:
         # Access the file name instead of the assigned name
         db_file = lambda wildcards:config["dbs"][wildcards.db],
