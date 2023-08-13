@@ -65,8 +65,10 @@ rule run_sourmash_sketch:
         r2="input/" + config["group"] + "/{sample}_2.fastq.gz"
     output:
         "output/" + config["group"] + "/sketches/{sample}.sig.zip"
-    #conda:
-    #   "sourmash.yml"
+    conda:
+        "sourmash.yml"
+    benchmark:
+        "benchmarks/run_sourmash_sketch." + config["group"] + ".{sample}.tsv"
     shell:
         "sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund {input.r1} {input.r2} --name '{wildcards.sample}' -o {output}"
 
@@ -77,12 +79,14 @@ rule run_sourmash_gather:
     output:
         #"output/prefetch/{sample}.prefetch.csv" #{db}.{ksize}.{sample}
         "output/" + config["group"] + "/{db}/gather/{db}.{sample}.{k}.gather.csv"
-    #conda:
-    #   "sourmash.yml"
+    conda:
+        "sourmash.yml"
     params:
         # Access the file name instead of the assigned name
         db_file = lambda wildcards:config["dbs"][wildcards.db],
         #k = config["k"]
+    benchmark:
+        "benchmarks/run_sourmash_gather." + config["group"] + ".{db}.{sample}.{k}.tsv"
     shell:
         #"sourmash prefetch {input} db.trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}" #save prefetch results
         "sourmash gather {input} {params.db_file} --threshold-bp 0 -k {wildcards.k} -o {output}" 
@@ -93,6 +97,8 @@ rule perform_inner_join:
        "output/" + config["group"] + "/{db}/gather/{db}.{sample}.{k}.gather.csv" ,
     output:
        "output/" + config["group"] + "/{db}/cmon_name_annot/{db}.{sample}.{k}.annot.gather.csv" #{db.{ksize}.{sample}.common.csv
+    benchmark:
+        "benchmarks/perform_inner_join." + config["group"] + ".{db}.{sample}.{k}.tsv"
     shell:
        "python join_common_name_dbs.py {input} {output}"
 

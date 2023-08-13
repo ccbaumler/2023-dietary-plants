@@ -5,9 +5,6 @@ group: "weight_loss"
 dbs:
     crop_chloroplast: "../db/Sketched-db/db.crop-plant-entrez.ref.sig.zip"
     all_chloroplast: "../db/Sketched-db/db.plant-entrez-ref.sig.zip"
-    crop_chloroplast.100: "../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip"
-    all_chloroplast.100: "../db/Sketched-db/db.plant-entrez-ref.100.sig.zip"
-    trnl.1: "../db/Sketched-db/db.trnL-entrez-ref.fasta.sig"
 
 k_size:
   - 21

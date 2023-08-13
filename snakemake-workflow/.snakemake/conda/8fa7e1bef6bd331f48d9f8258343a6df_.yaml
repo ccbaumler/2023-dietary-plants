@@ -1,8 +1,0 @@
-channels:
- - conda-forge
- - bioconda
- - defaults
-dependencies:
- - python>=3.8,<3.10
- - screed>=1.1,<2
- - sourmash>=4.8.0,<5
