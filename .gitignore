@@ -4,3 +4,4 @@ db/db.plant-entrez-ref.fasta.bz2
 
 test/
 
+snakemake-workflow/.snakemake

@@ -35,6 +35,9 @@ def get_wildcards(wildcards):
 
 #dir_name = name_scheme()
 SAMPLES = extract_samples()
+
+SAMPLES=SAMPLES[:5]
+print(SAMPLES)
 # test rule
 #rule test:
 #    params:

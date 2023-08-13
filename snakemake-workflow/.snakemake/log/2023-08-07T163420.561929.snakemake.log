@@ -1,3 +1,0 @@
-NameError in line 53 of /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile:
-name 'dir_name' is not defined
-  File "/home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile", line 53, in <module>

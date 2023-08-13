@@ -1,7 +1,0 @@
-Building DAG of jobs...
-MissingInputException in rule test  in line 36 of /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile:
-Missing input files for rule test:
-    output: results
-    affected files:
-        weight_loss.51.genome
-        ERR11520726

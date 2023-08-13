@@ -1,3 +1,0 @@
-NameError in line 50 of /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile:
-name 'SAMPLES' is not defined
-  File "/home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile", line 50, in <module>
