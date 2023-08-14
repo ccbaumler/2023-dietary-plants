@@ -8,6 +8,8 @@ dbs:
     crop_chloroplast.100: "../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip"
     all_chloroplast.100: "../db/Sketched-db/db.plant-entrez-ref.100.sig.zip"
     trnl.1: "../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig"
+    # add gtdb
+    gtdb: " /group/ctbrowngrp/sourmash-db/gtdb-rs207/gtdb-rs207.genomic-reps.dna.k31.zip"
 
 k_size:
   - 21
