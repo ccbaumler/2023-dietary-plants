@@ -15,6 +15,9 @@ threads=$2
 # Store output file variable
 #output_file=$2 #""
 
+# Create a list of ftp links
 URL_LIST=$(awk -F' ' '{print $3}' $input_file)
 
+# Multithread downloading sequences from url list
+# See https://stackoverflow.com/questions/7577615/parallel-wget-in-bash
 echo $URL_LIST | xargs -n 1 -P $threads wget -q -nc
