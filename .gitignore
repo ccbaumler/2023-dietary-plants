@@ -8,4 +8,4 @@ test/
 
 Scripts/.snakemake/
 
-snakemake-workflow/input/adult-1
+snakemake-workflow/input/adult-1/
