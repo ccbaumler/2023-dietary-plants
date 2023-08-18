@@ -1,6 +1,11 @@
 prelim_workflow-prefetch/
 
+db/Sketched-db/
+
 db/db.plant-entrez-ref.fasta.bz2
 
 test/
 
+Scripts/.snakemake/
+
+snakemake-workflow/input/adult-1
