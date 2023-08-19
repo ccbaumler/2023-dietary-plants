@@ -1,6 +1,8 @@
 # Snakemake Config File
 
-group: "weight_loss"
+group: 
+  - "weight_loss"
+  - "adult-1"
 
 dbs:
     crop_chloroplast: "../db/Sketched-db/db.crop-plant-entrez.ref.sig.zip"
