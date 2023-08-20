@@ -93,8 +93,8 @@ rule run_sourmash_sketch:
 #    benchmark:
 #        repeat("benchmarks/run_sourmash_sketch.{group}.{sample}.tsv", 5)
     resources:
-        mem_mb=85*5,
-        runtime= lambda wildcards, attempt: 125 / 60 * 5
+        mem_mb lambda wildcards, attempt: 85 * attempt,
+        runtime= lambda wildcards, attempt: 125 / 60 * attempt
     shell:
         "sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund {input.r1} {input.r2} --name '{wildcards.sample}' -o {output}"
 
@@ -114,8 +114,8 @@ rule run_sourmash_gather:
 #    benchmark:
 #        repeat("benchmarks/run_sourmash_gather.{group}.{db}.{sample}.{k}.tsv", 5)
     resources:
-        mem_mb=205*5,
-        runtime= lambda wildcards, attempt: 365 / 60 * 5
+        mem_mb= lambda wildcards, attempt: 205 * attempt,
+        runtime= lambda wildcards, attempt: 365 / 60 * attempt
     shell:
         #"sourmash prefetch {input} db.trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}" #save prefetch results
         "sourmash gather {input} {params.db_file} --threshold-bp 0 -k {wildcards.k} -o {output}" 
@@ -129,10 +129,7 @@ rule perform_inner_join:
 #    benchmark:
 #        repeat("benchmarks/perform_inner_join.{group}.{db}.{sample}.{k}.tsv", 5)
     resources:
-        mem_mb=75*5,
-        runtime= lambda wildcards, attempt: 25 / 60 * 5
+        mem_mb= lambda wildcards, attempt: 75 * attempt,
+        runtime= lambda wildcards, attempt: 25 / 60 * attempt
     shell:
        "python join_common_name_dbs.py {input} {output}"
-
-#list_all_inputs = [ expand(f"output/{group_id}/{{db}}/cmon_name_annot/{{db}}.{sample_id}{{k}}.annot.gather.csv",  db=config["dbs"], k=config["k_size"]) for group_id, sample_id in SAMPLES_DICT.items() ]
-#print(list_all_inputs)
