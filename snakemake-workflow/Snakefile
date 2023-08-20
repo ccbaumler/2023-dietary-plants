@@ -11,7 +11,7 @@ SAMPLES_DICT = {}
 for path in indir:
     for (dirpath, dirnames, filenames) in os.walk(path):
         dir_name = os.path.basename(dirpath)
-        SAMPLES_DICT[dir_name] = [filename.split('_')[0] for filename in filenames][:5]
+        SAMPLES_DICT[dir_name] = [filename.split('_')[0] for filename in filenames]#[:5]
         break
 
 list_all_inputs = [ 
@@ -90,8 +90,11 @@ rule run_sourmash_sketch:
         "output/{group}/sketches/{sample}.sig.zip"
     conda:
         "sourmash.yml"
-    benchmark:
-        repeat("benchmarks/run_sourmash_sketch.{group}.{sample}.tsv", 5)
+#    benchmark:
+#        repeat("benchmarks/run_sourmash_sketch.{group}.{sample}.tsv", 5)
+    resources:
+        mem_mb=85*5,
+        runtime= lambda wildcards, attempt: 125 / 60 * 5
     shell:
         "sourmash sketch dna -p scaled=100,k=21,k=31,k=51,abund {input.r1} {input.r2} --name '{wildcards.sample}' -o {output}"
 
@@ -108,8 +111,11 @@ rule run_sourmash_gather:
         # Access the file name instead of the assigned name
         db_file = lambda wildcards:config["dbs"][wildcards.db],
         #k = config["k"]
-    benchmark:
-        repeat("benchmarks/run_sourmash_gather.{group}.{db}.{sample}.{k}.tsv", 5)
+#    benchmark:
+#        repeat("benchmarks/run_sourmash_gather.{group}.{db}.{sample}.{k}.tsv", 5)
+    resources:
+        mem_mb=205*5,
+        runtime= lambda wildcards, attempt: 365 / 60 * 5
     shell:
         #"sourmash prefetch {input} db.trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}" #save prefetch results
         "sourmash gather {input} {params.db_file} --threshold-bp 0 -k {wildcards.k} -o {output}" 
@@ -120,8 +126,11 @@ rule perform_inner_join:
        "output/{group}/{db}/gather/{db}.{sample}.{k}.gather.csv" ,
     output:
        "output/{group}/{db}/cmon_name_annot/{db}.{sample}.{k}.annot.gather.csv" #{db.{ksize}.{sample}.common.csv
-    benchmark:
-        repeat("benchmarks/perform_inner_join.{group}.{db}.{sample}.{k}.tsv", 5)
+#    benchmark:
+#        repeat("benchmarks/perform_inner_join.{group}.{db}.{sample}.{k}.tsv", 5)
+    resources:
+        mem_mb=75*5,
+        runtime= lambda wildcards, attempt: 25 / 60 * 5
     shell:
        "python join_common_name_dbs.py {input} {output}"
 
