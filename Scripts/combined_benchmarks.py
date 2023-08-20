@@ -21,7 +21,7 @@ def calculate_values(fp):
     rules = df.copy()
     rules['filename'] = df['filename'].str.split('.').str[0]
 
-    agg_columns = ["s", "max_rss"]#, "max_vms", "max_uss", "max_pss", "mean_load", "cpu_time"]
+    agg_columns = ["s", "max_rss", "cpu_time"]#"s", max_rss", "max_vms", "max_uss", "max_pss", "mean_load", "cpu_time"]
     agg_functions = ["max", "mean", "min"]
     grouped = df.groupby("filename")[agg_columns].agg(agg_functions).round(2)
     concise = rules.groupby("filename")[agg_columns].agg(agg_functions).round(2)
