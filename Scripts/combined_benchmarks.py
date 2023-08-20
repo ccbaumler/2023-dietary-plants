@@ -20,7 +20,6 @@ def calculate_values(fp):
     
     rules = df.copy()
     rules['filename'] = df['filename'].str.split('.').str[0]
-    print(rules)
 
     agg_columns = ["s", "max_rss"]#, "max_vms", "max_uss", "max_pss", "mean_load", "cpu_time"]
     agg_functions = ["max", "mean", "min"]
@@ -38,7 +37,6 @@ def calculate_values(fp):
     grouped.insert(len(grouped.columns), 'filename', col0)
     col0 = concise.pop('filename')
     concise.insert(len(concise.columns), 'filename', col0)
-    print(concise)
 
     return grouped, concise
 
