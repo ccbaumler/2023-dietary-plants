@@ -23,7 +23,7 @@ def calculate_values(fp):
     print(rules)
 
     agg_columns = ["s", "max_rss"]#, "max_vms", "max_uss", "max_pss", "mean_load", "cpu_time"]
-    agg_functions = ["mean", "max", "min"]
+    agg_functions = ["max", "mean", "min"]
     grouped = df.groupby("filename")[agg_columns].agg(agg_functions).round(2)
     concise = rules.groupby("filename")[agg_columns].agg(agg_functions).round(2)
 
@@ -32,7 +32,6 @@ def calculate_values(fp):
 
     # Add 'filename' as a separate column in the resulting DataFrame
     grouped.reset_index(inplace=True)
-    
     concise.reset_index(inplace=True)
     
     col0 = grouped.pop('filename')
@@ -40,9 +39,6 @@ def calculate_values(fp):
     col0 = concise.pop('filename')
     concise.insert(len(concise.columns), 'filename', col0)
     print(concise)
-
-    #concise = grouped.copy()
-    #concise['filename'] = grouped['filename'].str.split('.').str[0]
 
     return grouped, concise
 
