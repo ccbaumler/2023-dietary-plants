@@ -1,0 +1,315 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 8
+Rules claiming more threads will be scaled down.
+Job stats:
+job                    count
+-------------------  -------
+all                        1
+perform_inner_join       720
+run_sourmash_gather      720
+total                   1441
+
+Select jobs to execute...
+
+[Fri Aug 18 15:50:07 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520706.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520706.31.gather.csv, output/weight_loss/crop_chloroplast.100/gather_ext/crop_chloroplast.100.ERR11520706.31.prefetch_matching_sig, output/weight_loss/crop_chloroplast.100/gather_ext/crop_chloroplast.100.ERR11520706.31.gather_matching_sig, output/weight_loss/crop_chloroplast.100/gather_ext/crop_chloroplast.100.ERR11520706.31.prefetch_matches.csv
+    jobid: 680
+    reason: Code has changed since last execution
+    wildcards: db=crop_chloroplast.100, sample=ERR11520706, k=31
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 18 15:50:07 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520728.31.gather.csv, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520728.31.prefetch_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520728.31.gather_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520728.31.prefetch_matches.csv
+    jobid: 980
+    reason: Code has changed since last execution
+    wildcards: db=all_chloroplast.100, sample=ERR11520728, k=31
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 18 15:50:07 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520691.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.31.gather.csv, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520691.31.prefetch_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520691.31.gather_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520691.31.prefetch_matches.csv
+    jobid: 1226
+    reason: Code has changed since last execution
+    wildcards: db=trnl.1, sample=ERR11520691, k=31
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 18 15:50:07 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520701.51.gather.csv, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.prefetch_matching_sig, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.gather_matching_sig, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.prefetch_matches.csv
+    jobid: 161
+    reason: Code has changed since last execution
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520701, k=51
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 18 15:50:07 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520698.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520698.51.gather.csv, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520698.51.prefetch_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520698.51.gather_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520698.51.prefetch_matches.csv
+    jobid: 934
+    reason: Code has changed since last execution
+    wildcards: db=all_chloroplast.100, sample=ERR11520698, k=51
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 18 15:50:07 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520725.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520725.51.gather.csv, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.prefetch_matching_sig, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.gather_matching_sig, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.prefetch_matches.csv
+    jobid: 49
+    reason: Code has changed since last execution
+    wildcards: db=crop_chloroplast.1000, sample=ERR11520725, k=51
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 18 15:50:07 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520716.31.gather.csv, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520716.31.prefetch_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520716.31.gather_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520716.31.prefetch_matches.csv
+    jobid: 866
+    reason: Code has changed since last execution
+    wildcards: db=all_chloroplast.100, sample=ERR11520716, k=31
+    resources: tmpdir=/tmp
+
+
+[Fri Aug 18 15:50:07 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520722.21.prefetch_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520722.21.gather_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520722.21.prefetch_matches.csv
+    jobid: 1026
+    reason: Code has changed since last execution
+    wildcards: db=trnl.1, sample=ERR11520722, k=21
+    resources: tmpdir=/tmp
+
+[Fri Aug 18 15:50:11 2023]
+Error in rule run_sourmash_gather:
+    jobid: 161
+    input: output/weight_loss/sketches/ERR11520701.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520701.51.gather.csv, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.prefetch_matching_sig, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.gather_matching_sig, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520701.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 51 --save-matches output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.gather_matching_sig --save-prefetch output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.prefetch_matching_sig --save-prefetch-csv output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.prefetch_matches.csv -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520701.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Aug 18 15:50:11 2023]
+Error in rule run_sourmash_gather:
+    jobid: 49
+    input: output/weight_loss/sketches/ERR11520725.sig.zip
+    output: output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520725.51.gather.csv, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.prefetch_matching_sig, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.gather_matching_sig, output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520725.sig.zip ../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip --threshold-bp 0 -k 51 --save-matches output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.gather_matching_sig --save-prefetch output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.prefetch_matching_sig --save-prefetch-csv output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.prefetch_matches.csv -o output/weight_loss/crop_chloroplast.1000/gather/crop_chloroplast.1000.ERR11520725.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job run_sourmash_gather since they might be corrupted:
+output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520701.51.prefetch_matches.csv
+Select jobs to execute...
+
+[Fri Aug 18 15:50:11 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520709.sig.zip
+    output: output/weight_loss/gtdb/gather/gtdb.ERR11520709.31.gather.csv, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520709.31.prefetch_matching_sig, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520709.31.gather_matching_sig, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520709.31.prefetch_matches.csv
+    jobid: 1274
+    reason: Missing output files: output/weight_loss/gtdb/gather/gtdb.ERR11520709.31.gather.csv
+    wildcards: db=gtdb, sample=ERR11520709, k=31
+    resources: tmpdir=/tmp
+
+Removing output files of failed job run_sourmash_gather since they might be corrupted:
+output/weight_loss/crop_chloroplast.1000/gather_ext/crop_chloroplast.1000.ERR11520725.51.prefetch_matches.csv
+Select jobs to execute...
+
+[Fri Aug 18 15:50:11 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520699.31.prefetch_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520699.31.gather_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520699.31.prefetch_matches.csv
+    jobid: 1082
+    reason: Code has changed since last execution
+    wildcards: db=trnl.1, sample=ERR11520699, k=31
+    resources: tmpdir=/tmp
+
+[Fri Aug 18 15:50:14 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1274
+    input: output/weight_loss/sketches/ERR11520709.sig.zip
+    output: output/weight_loss/gtdb/gather/gtdb.ERR11520709.31.gather.csv, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520709.31.prefetch_matching_sig, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520709.31.gather_matching_sig, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520709.31.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520709.sig.zip ../../db/Sketched-db/gtdb-214-reps-all-k.zip --threshold-bp 0 -k 31 --save-matches output/weight_loss/gtdb/gather_ext/gtdb.ERR11520709.31.gather_matching_sig --save-prefetch output/weight_loss/gtdb/gather_ext/gtdb.ERR11520709.31.prefetch_matching_sig --save-prefetch-csv output/weight_loss/gtdb/gather_ext/gtdb.ERR11520709.31.prefetch_matches.csv -o output/weight_loss/gtdb/gather/gtdb.ERR11520709.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Aug 18 15:50:14 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.21.gather.csv, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.prefetch_matching_sig, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.gather_matching_sig, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.prefetch_matches.csv
+    jobid: 342
+    reason: Code has changed since last execution
+    wildcards: db=all_chloroplast.1000, sample=ERR11520711, k=21
+    resources: tmpdir=/tmp
+
+[Fri Aug 18 15:50:17 2023]
+Finished job 680.
+1 of 1441 steps (0.1%) done
+Select jobs to execute...
+
+[Fri Aug 18 15:50:17 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520694.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520694.21.gather.csv, output/weight_loss/crop_chloroplast.100/gather_ext/crop_chloroplast.100.ERR11520694.21.prefetch_matching_sig, output/weight_loss/crop_chloroplast.100/gather_ext/crop_chloroplast.100.ERR11520694.21.gather_matching_sig, output/weight_loss/crop_chloroplast.100/gather_ext/crop_chloroplast.100.ERR11520694.21.prefetch_matches.csv
+    jobid: 648
+    reason: Code has changed since last execution
+    wildcards: db=crop_chloroplast.100, sample=ERR11520694, k=21
+    resources: tmpdir=/tmp
+
+[Fri Aug 18 15:50:25 2023]
+Finished job 648.
+2 of 1441 steps (0.1%) done
+Select jobs to execute...
+
+[Fri Aug 18 15:50:25 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520726.sig.zip
+    output: output/weight_loss/gtdb/gather/gtdb.ERR11520726.51.gather.csv, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520726.51.prefetch_matching_sig, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520726.51.gather_matching_sig, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520726.51.prefetch_matches.csv
+    jobid: 1360
+    reason: Missing output files: output/weight_loss/gtdb/gather/gtdb.ERR11520726.51.gather.csv
+    wildcards: db=gtdb, sample=ERR11520726, k=51
+    resources: tmpdir=/tmp
+
+[Fri Aug 18 15:50:27 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1360
+    input: output/weight_loss/sketches/ERR11520726.sig.zip
+    output: output/weight_loss/gtdb/gather/gtdb.ERR11520726.51.gather.csv, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520726.51.prefetch_matching_sig, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520726.51.gather_matching_sig, output/weight_loss/gtdb/gather_ext/gtdb.ERR11520726.51.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520726.sig.zip ../../db/Sketched-db/gtdb-214-reps-all-k.zip --threshold-bp 0 -k 51 --save-matches output/weight_loss/gtdb/gather_ext/gtdb.ERR11520726.51.gather_matching_sig --save-prefetch output/weight_loss/gtdb/gather_ext/gtdb.ERR11520726.51.prefetch_matching_sig --save-prefetch-csv output/weight_loss/gtdb/gather_ext/gtdb.ERR11520726.51.prefetch_matches.csv -o output/weight_loss/gtdb/gather/gtdb.ERR11520726.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Select jobs to execute...
+
+[Fri Aug 18 15:50:27 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520718.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520718.51.prefetch_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520718.51.gather_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520718.51.prefetch_matches.csv
+    jobid: 1024
+    reason: Code has changed since last execution
+    wildcards: db=trnl.1, sample=ERR11520718, k=51
+    resources: tmpdir=/tmp
+
+[Fri Aug 18 15:50:36 2023]
+Error in rule run_sourmash_gather:
+    jobid: 342
+    input: output/weight_loss/sketches/ERR11520711.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.21.gather.csv, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.prefetch_matching_sig, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.gather_matching_sig, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520711.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 21 --save-matches output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.gather_matching_sig --save-prefetch output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.prefetch_matching_sig --save-prefetch-csv output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.prefetch_matches.csv -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520711.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Removing output files of failed job run_sourmash_gather since they might be corrupted:
+output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520711.21.prefetch_matches.csv
+Select jobs to execute...
+
+[Fri Aug 18 15:50:36 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520713.sig.zip
+    output: output/weight_loss/crop_chloroplast.100/gather/crop_chloroplast.100.ERR11520713.31.gather.csv, output/weight_loss/crop_chloroplast.100/gather_ext/crop_chloroplast.100.ERR11520713.31.prefetch_matching_sig, output/weight_loss/crop_chloroplast.100/gather_ext/crop_chloroplast.100.ERR11520713.31.gather_matching_sig, output/weight_loss/crop_chloroplast.100/gather_ext/crop_chloroplast.100.ERR11520713.31.prefetch_matches.csv
+    jobid: 536
+    reason: Code has changed since last execution
+    wildcards: db=crop_chloroplast.100, sample=ERR11520713, k=31
+    resources: tmpdir=/tmp
+
+[Fri Aug 18 15:50:43 2023]
+Finished job 536.
+3 of 1441 steps (0.2%) done
+Select jobs to execute...
+
+[Fri Aug 18 15:50:43 2023]
+rule run_sourmash_gather:
+    input: output/weight_loss/sketches/ERR11520704.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520704.21.gather.csv, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520704.21.prefetch_matching_sig, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520704.21.gather_matching_sig, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520704.21.prefetch_matches.csv
+    jobid: 486
+    reason: Code has changed since last execution
+    wildcards: db=all_chloroplast.1000, sample=ERR11520704, k=21
+    resources: tmpdir=/tmp
+
+Terminating processes on user request, this might take some time.
+[Fri Aug 18 15:50:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 980
+    input: output/weight_loss/sketches/ERR11520728.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520728.31.gather.csv, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520728.31.prefetch_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520728.31.gather_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520728.31.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520728.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 31 --save-matches output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520728.31.gather_matching_sig --save-prefetch output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520728.31.prefetch_matching_sig --save-prefetch-csv output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520728.31.prefetch_matches.csv -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520728.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Aug 18 15:50:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 486
+    input: output/weight_loss/sketches/ERR11520704.sig.zip
+    output: output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520704.21.gather.csv, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520704.21.prefetch_matching_sig, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520704.21.gather_matching_sig, output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520704.21.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520704.sig.zip ../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip --threshold-bp 0 -k 21 --save-matches output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520704.21.gather_matching_sig --save-prefetch output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520704.21.prefetch_matching_sig --save-prefetch-csv output/weight_loss/all_chloroplast.1000/gather_ext/all_chloroplast.1000.ERR11520704.21.prefetch_matches.csv -o output/weight_loss/all_chloroplast.1000/gather/all_chloroplast.1000.ERR11520704.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Aug 18 15:50:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 866
+    input: output/weight_loss/sketches/ERR11520716.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520716.31.gather.csv, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520716.31.prefetch_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520716.31.gather_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520716.31.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520716.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 31 --save-matches output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520716.31.gather_matching_sig --save-prefetch output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520716.31.prefetch_matching_sig --save-prefetch-csv output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520716.31.prefetch_matches.csv -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520716.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Aug 18 15:50:59 2023]
+Error in rule run_sourmash_gather:
+    jobid: 934
+    input: output/weight_loss/sketches/ERR11520698.sig.zip
+    output: output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520698.51.gather.csv, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520698.51.prefetch_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520698.51.gather_matching_sig, output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520698.51.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520698.sig.zip ../db/Sketched-db/db.plant-entrez-ref.100.sig.zip --threshold-bp 0 -k 51 --save-matches output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520698.51.gather_matching_sig --save-prefetch output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520698.51.prefetch_matching_sig --save-prefetch-csv output/weight_loss/all_chloroplast.100/gather_ext/all_chloroplast.100.ERR11520698.51.prefetch_matches.csv -o output/weight_loss/all_chloroplast.100/gather/all_chloroplast.100.ERR11520698.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Aug 18 15:51:05 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1226
+    input: output/weight_loss/sketches/ERR11520691.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.31.gather.csv, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520691.31.prefetch_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520691.31.gather_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520691.31.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520691.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 31 --save-matches output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520691.31.gather_matching_sig --save-prefetch output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520691.31.prefetch_matching_sig --save-prefetch-csv output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520691.31.prefetch_matches.csv -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520691.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Aug 18 15:51:05 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1026
+    input: output/weight_loss/sketches/ERR11520722.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520722.21.prefetch_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520722.21.gather_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520722.21.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520722.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 21 --save-matches output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520722.21.gather_matching_sig --save-prefetch output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520722.21.prefetch_matching_sig --save-prefetch-csv output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520722.21.prefetch_matches.csv -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520722.21.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Aug 18 15:51:06 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1082
+    input: output/weight_loss/sketches/ERR11520699.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520699.31.prefetch_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520699.31.gather_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520699.31.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520699.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 31 --save-matches output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520699.31.gather_matching_sig --save-prefetch output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520699.31.prefetch_matching_sig --save-prefetch-csv output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520699.31.prefetch_matches.csv -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520699.31.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+[Fri Aug 18 15:51:10 2023]
+Error in rule run_sourmash_gather:
+    jobid: 1024
+    input: output/weight_loss/sketches/ERR11520718.sig.zip
+    output: output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520718.51.prefetch_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520718.51.gather_matching_sig, output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520718.51.prefetch_matches.csv
+    shell:
+        sourmash gather output/weight_loss/sketches/ERR11520718.sig.zip ../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig --threshold-bp 0 -k 51 --save-matches output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520718.51.gather_matching_sig --save-prefetch output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520718.51.prefetch_matching_sig --save-prefetch-csv output/weight_loss/trnl.1/gather_ext/trnl.1.ERR11520718.51.prefetch_matches.csv -o output/weight_loss/trnl.1/gather/trnl.1.ERR11520718.51.gather.csv
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2023-08-18T154947.001760.snakemake.log

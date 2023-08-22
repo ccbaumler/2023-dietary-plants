@@ -1,0 +1,7 @@
+Building DAG of jobs...
+MissingInputException in rule run_sourmash_sketch in file /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile, line 59:
+Missing input files for rule run_sourmash_sketch:
+    output: output/adult-1/sketches/ERR11597478.sig.zip
+    wildcards: sample=ERR11597478
+    affected files:
+        input/adult-1/ERR11597478_2.fastq.gz

@@ -1,0 +1,3 @@
+NameError in file /home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile, line 57:
+name 'list_all_input_100' is not defined
+  File "/home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile", line 57, in <module>

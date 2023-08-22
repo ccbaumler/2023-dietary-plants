@@ -1,0 +1,3 @@
+SyntaxError:
+Not all output, log and benchmark files of rule perform_inner_join contain the same wildcards. This is crucial though, in order to avoid that two or more jobs write to the same file.
+  File "/home/sjnair/2023-dietary-plants/snakemake-workflow/Snakefile", line 116, in <module>
