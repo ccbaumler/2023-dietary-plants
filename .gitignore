@@ -6,6 +6,6 @@ db/db.plant-entrez-ref.fasta.bz2
 
 test/
 
-Scripts/.snakemake/
+snakemake-workflow/.snakemake/
 
 snakemake-workflow/input/
