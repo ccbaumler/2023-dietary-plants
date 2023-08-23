@@ -22,7 +22,7 @@ def make_input_list():
             tt = expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=config["k_size"], scale=100)
             input_list.extend(tt)
         else:
-            tt= expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=config["k_size"], scale=100)
+            tt= expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=config["k_size"], scale=config["scale"])
             input_list.extend(tt)
     return input_list
 
