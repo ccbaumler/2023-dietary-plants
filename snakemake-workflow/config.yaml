@@ -1,19 +1,13 @@
 # Snakemake Config File
 
-group: 
-  - "weight_loss"
-  - "adult-1"
-  - "adult-2"
-  - "adolescent"
+group: "weight_loss"
 
-dbs_1000:
-    crop_chloroplast.1000: "../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip"
-    all_chloroplast.1000: "../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip"
-
-dbs_100:    
-    crop_chloroplast.100: "../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip"
-    all_chloroplast.100: "../db/Sketched-db/db.plant-entrez-ref.100.sig.zip"
-    trnl.1: "../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig"
+dbs:
+#    crop_chloroplast.1000: "../db/Sketched-db/db.crop-plant-entrez.ref.1000.sig.zip"
+#    all_chloroplast.1000: "../db/Sketched-db/db.plant-entrez-ref.1000.sig.zip"    
+    crop_chloroplast: "../db/Sketched-db/db.crop-plant-entrez.ref.100.sig.zip"
+    all_chloroplast: "../db/Sketched-db/db.plant-entrez-ref.100.sig.zip"
+    trnl: "../db/Sketched-db/db.trnL-entrez-ref.fasta.bz2.sig"
 
 #gtdb:
     #gtdb: "../../db/Sketched-db/gtdb-214-reps-all-k.zip"
@@ -22,3 +16,7 @@ k_size:
   - 21
   - 31
   - 51
+
+scale:
+  - 100
+  - 1000
