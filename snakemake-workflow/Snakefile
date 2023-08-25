@@ -1,5 +1,6 @@
 import os
 
+
 configfile: "config.yaml"
 
 def extract_samples():
@@ -15,11 +16,15 @@ def extract_samples():
 
 SAMPLES = extract_samples()
 
+
 def make_input_list():
     input_list =[]
     for db,filepath in config["dbs"].items():
         if db== 'trnl':
             tt = expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=config["k_size"], scale=100)
+            input_list.extend(tt)
+        elif db == 'gtdb':
+            tt = expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=config["k_size"] , scale=1000)
             input_list.extend(tt)
         else:
             tt= expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=config["k_size"], scale=config["scale"])
@@ -29,7 +34,8 @@ def make_input_list():
 print(make_input_list())
 print(len(make_input_list()))
 
-
+#rule test:
+#    shell: "echo 'wowowowowow'"
 # SNAKEMAKE RULES
 rule all:
    input:
@@ -52,10 +58,14 @@ rule run_sourmash_gather:
     input:
         "output/" + config["group"] + "/sketches/{sample}.sig.zip"
     output:
-        gather_csv ="output/" + config["group"] +"/{db}.{scale}/gather/{sample}.{k}.gather.csv",
-        prefetch_sigs= "output/" + config["group"] +"/{db}.{scale}/gather_ext/{sample}.{k}.prefetch.sig",
-        gather_matches = "output/" + config["group"] +"/{db}.{scale}/gather_ext/{sample}.{k}.gather.sig",
+        #prefetch outputs
+        query_matching_sigs = "output/" + config["group"] + "/{db}.{scale}/hash_matches/{sample}.{k}.query-matches.sig",
+        db_matching_sigs = "output/" + config["group"] + "/{db}.{scale}/gather_ext/{sample}.{k}.db-matches.sig",
         prefetch_csv = "output/" + config["group"] +"/{db}.{scale}/gather_ext/{sample}.{k}.prefetch.csv",
+        #gather outputs
+        gather_matches = "output/" + config["group"] +"/{db}.{scale}/gather_ext/{sample}.{k}.gather.sig",
+        gather_csv ="output/" + config["group"] +"/{db}.{scale}/gather/{sample}.{k}.gather.csv",
+        
     #conda:
     #   "sourmash.yml"
     params:
@@ -64,7 +74,10 @@ rule run_sourmash_gather:
         #k = config["k"]
     shell:
         #"sourmash prefetch {input} db..{scale}trnL-entrez-ref.fasta.sig --dna --ksize 51 --threshold-bp 0 -o {output}" #save prefetch results
-        "sourmash gather {input} {params.db_file} --scaled {wildcards.scale} --threshold-bp 0 -k {wildcards.k} --save-matches {output.gather_matches} --save-prefetch {output.prefetch_sigs} --save-prefetch-csv {output.prefetch_csv} -o {output.gather_csv}" 
+        """
+        sourmash prefetch {input} {params.db_file} --scaled {wildcards.scale} --threshold-bp 0 -k {wildcards.k} --save-matching-hashes {output.query_matching_sigs} --save-matches {output.db_matching_sigs} -o {output.prefetch_csv}
+        sourmash gather {output.query_matching_sigs} {output.db_matching_sigs} --scaled {wildcards.scale} --threshold-bp 0 -k {wildcards.k} --save-matches {output.gather_matches} -o {output.gather_csv}
+        """ 
 
 # Rule for performing inner join with common_names.csv
 rule perform_inner_join:
