@@ -65,6 +65,7 @@ rule run_sourmash_gather:
         #gather outputs
         gather_matches = "output/" + config["group"] +"/{db}.{scale}/gather_ext/{sample}.{k}.gather.sig",
         gather_csv ="output/" + config["group"] +"/{db}.{scale}/gather/{sample}.{k}.gather.csv",
+        #
         
     #conda:
     #   "sourmash.yml"

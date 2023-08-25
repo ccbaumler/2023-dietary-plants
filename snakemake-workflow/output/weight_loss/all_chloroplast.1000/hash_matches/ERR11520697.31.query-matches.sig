@@ -1,0 +1,1 @@
+[{"class":"sourmash_signature","email":"","hash_function":"0.murmur64","filename":null,"name":"ERR11520697-known","license":"CC0","signatures":[{"num":0,"ksize":31,"seed":42,"max_hash":184467440737095520,"mins":[3649333927889761,5812563854968285,11163562974379811],"md5sum":"f6ce05c395039a0713895584970d13cb","abundances":[2,6,6945],"molecule":"dna"}],"version":0.4}]

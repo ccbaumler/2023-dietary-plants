@@ -9,9 +9,8 @@ db/db.plant-entrez-ref.fasta.bz2
 test/
 
 snakemake-workflow/.snakemake/
-
 snakemake-workflow/input/
-
-snakemake-workflow/output/adolescent/
-snakemake-workflow/output/adult-1/
-snakemake-workflow/output/adult-2/
+**/gather_ext
+snakemake-workflow/output/adolescent    
+snakemake-workflow/output/adult-1   
+snakemake-workflow/output/adult-2
