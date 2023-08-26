@@ -1,6 +1,6 @@
 #! /bin/bash -login
 #SBATCH -p bmh
-#SBATCH -J chr_weightlos
+#SBATCH -J chr_adolescent
 #SBATCH -t 20:00:00
 #SBATCH -N 1
 #SBATCH -n 1
@@ -18,4 +18,5 @@
 conda activate snakemake
 
 # run snakefile 
-snakemake -s Snakefile -c 10 -k
+snakemake --unlock
+snakemake -s Snakefile -c 10 -k --config group="adolescent"
