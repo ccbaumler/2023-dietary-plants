@@ -3,12 +3,21 @@
 group: 
   - "weight_loss"
   - "adult-1"
+  - "adolescent"
 
 dbs:
+    plastid: "../db/Sketched-db/db.plastid.2.1.100.sig.zip"
     crop_chloroplast: "../db/Sketched-db/db.crop-plant-entrez.ref.sig.zip"
     all_chloroplast: "../db/Sketched-db/db.plant-entrez-ref.sig.zip"
+
+contaminant:
+  - '../db/Sketched-db/GRCh38.p14.100.sig.zip'
 
 k_size:
   - 21
   - 31
   - 51
+
+scale:
+  - 100
+  - 1000

@@ -47,6 +47,8 @@ rule run_sourmash_sketch:
         runtime = lambda wildcards, attempt: 125 / 60 * attempt
     params:
         k_list = lambda wildcards: ",".join([f"k={k}" for k in config["k_size"]])
+    benchmark:
+        repeat('benchmarks/run_sourmash_sketch.{group}.{sample}.{scale}.tsv', 5)
     shell:"""
         sourmash sketch dna -p scaled={wildcards.scale},{params.k_list},abund {input.r1} {input.r1} --name '{wildcards.sample}' -o {output}
     """
@@ -55,28 +57,43 @@ rule run_sourmash_sketch:
 # Change prefetch and gather to fastmultigather!
 #
 
-rule run_sourmash_gather:
+rule run_sourmash_prefetch:
     input:
         "output/{group}/sketches/{sample}.{scale}.sig.zip"
     output:
-        #prefetch outputs
         query_matching_sigs = "output/{group}/{db}.{scale}/hash_matches/{sample}.{k}.query-matches.sig",
         db_matching_sigs = "output/{group}/{db}.{scale}/gather_ext/{sample}.{k}.db-matches.sig",
         prefetch_csv = "output/{group}/{db}.{scale}/gather_ext/{sample}.{k}.prefetch.csv",
-        #gather outputs
-        gather_matches = "output/{group}/{db}.{scale}/gather_ext/{sample}.{k}.gather.sig",
-        gather_csv ="output/{group}/{db}.{scale}/gather/{sample}.{k}.gather.csv",
     conda:
         "sourmash.yml"
     params:
         # Access the file name instead of the assigned name
         db_file = lambda wildcards:config["dbs"][wildcards.db],
-    resources:
-        mem_mb= lambda wildcards, attempt: 205 * attempt,
-        runtime= lambda wildcards, attempt: 365 / 60 * attempt
+#    resources:
+#        mem_mb= lambda wildcards, attempt: 205 * attempt,
+#        runtime= lambda wildcards, attempt: 365 / 60 * attempt
+    benchmark:
+        repeat('benchmarks/run_sourmash_gather.{k}.{sample}.{db}.{scale}.{group}.tsv', 5)
     shell:"""
         sourmash prefetch {input} {params.db_file} --scaled {wildcards.scale} --dna --ksize {wildcards.k} --threshold-bp 0 --save-matching-hashes {output.query_matching_sigs} --save-matches {output.db_matching_sigs} -o {output.prefetch_csv}
-        sourmash gather {output.query_matching_sigs} {output.db_matching_sigs} --scaled {wildcards.scale} --threshold-bp 0 -k {wildcards.k} --save-matches {output.gather_matches} -o {output.gather_csv}
+    """
+
+rule run_sourmash_gather:
+    input:
+        query_matching_sigs = "output/{group}/{db}.{scale}/hash_matches/{sample}.{k}.query-matches.sig",
+        db_matching_sigs = "output/{group}/{db}.{scale}/gather_ext/{sample}.{k}.db-matches.sig",
+    output:
+        gather_matches = "output/{group}/{db}.{scale}/gather_ext/{sample}.{k}.gather.sig",
+        gather_csv =touch("output/{group}/{db}.{scale}/gather/{sample}.{k}.gather.csv"),
+    conda:
+        "sourmash.yml"
+#    resources:
+#        mem_mb= lambda wildcards, attempt: 205 * attempt,
+#        runtime= lambda wildcards, attempt: 365 / 60 * attempt
+    benchmark:
+        repeat('benchmarks/run_sourmash_gather.{k}.{sample}.{db}.{scale}.{group}.tsv', 5)
+    shell:"""
+        sourmash gather {input.query_matching_sigs} {input.db_matching_sigs} --scaled {wildcards.scale} --threshold-bp 0 -k {wildcards.k} --save-matches {output.gather_matches} -o {output.gather_csv}
     """
 
 # Rule for performing inner join with common_names.csv
@@ -88,6 +105,8 @@ rule perform_inner_join:
     resources:
         mem_mb= lambda wildcards, attempt: 75 * attempt,
         runtime= lambda wildcards, attempt: 25 / 60 * attempt
+    benchmark:
+        repeat('benchmarks/perform_inner_join.{k}.{sample}.{db}.{scale}.{group}.tsv', 5)
     shell:"""
        python join_common_name_dbs.py {input} {output}
     """
