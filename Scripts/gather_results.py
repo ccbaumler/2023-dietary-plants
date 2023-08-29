@@ -3,6 +3,7 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import sys
+from itertools import product
 
 def agg_df(group):
     folder_paths =[f"../snakemake-workflow/output/{group}/all_chloroplast.100/cmon_name_annot/",
@@ -68,6 +69,38 @@ def make_charts(final_df):
     plt.tight_layout()
     plt.savefig("boxplots.png")
 
+def generate_html_content(db_value, scale_value, k_value):
+    # Your example code
+    cond1 = final_df['db'] == db_value
+    cond2 = final_df['scaled'] == scale_value
+    cond3 = final_df['ksize'] == k_value
+    
+    subset_df = final_df[cond1 & cond2 & cond3]
+    top_15_values = subset_df['common_name'].value_counts()[:15]
+    
+    html_content = f"<h2>Parameters: db={db_value}, scaled={scale_value}, ksize={k_value}</h2>"
+    html_content += "<ul>"
+    for index, value in top_15_values.items():
+        html_content += f"<li>{index}: {value}</li>"
+    html_content += "</ul>"
+    
+    return html_content
+
+def output_html():
+    db = ['all_chloroplast', 'crop_chloroplast', 'trnl']
+    scale = [100, 1000]
+    k = [21, 31, 51]
+    all_combinations = list(product(db, scale, k))
+
+
+    html_output = "<html><head><title>Parameter Combinations</title></head><body>"
+    for db_value, scale_value, k_value in all_combinations:
+        html_output += generate_html_content(db_value, scale_value, k_value)
+    html_output += "</body></html>"
+
+    with open('parameter_combinations.html', 'w') as f:
+        f.write(html_output)
+
 
 
 if __name__ == "__main__":
@@ -76,7 +109,8 @@ if __name__ == "__main__":
     final_df['db'] = final_df['filename'].apply(db_shorthand)
 
     final_df= cmon_name_col(final_df)
-   
-
 
     make_charts(final_df)
+
+    output_html()
+
