@@ -24,7 +24,7 @@ def make_input_list():
             tt = expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=config["k_size"], scale=100)
             input_list.extend(tt)
         elif db == 'gtdb':
-            tt = expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=config["k_size"] , scale=1000)
+            tt = expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=31 , scale=1000)
             input_list.extend(tt)
         else:
             tt= expand("output/" + config["group"] + "/{db}.{scale}/cmon_name_annot/{sample}.{k}.annot.gather.csv",  db=db ,sample=SAMPLES, k=config["k_size"], scale=config["scale"])
@@ -89,3 +89,7 @@ rule perform_inner_join:
     shell:
        "python join_common_name_dbs.py {input} {output}"
 
+
+#TO DO 
+## track wildcards which had no gather hits. option 1 - python script. expand(wildcards) - os.listdir(). Print output to .txt file
+##                                           option 2 - use touch(file) as output for run_sourmash_gather
